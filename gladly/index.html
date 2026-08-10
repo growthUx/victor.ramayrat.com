@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Victor Ramayrat · Web Experience Manager Candidate · Gladly</title>
+<meta name="description" content="Victor Ramayrat is a senior web experience leader with 10+ years running marketing websites, CMS platforms, and digital experience systems end to end.">
+<meta name="author" content="Victor Ramayrat">
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://victor.ramayrat.com/gladly">
+<meta property="og:title" content="Victor Ramayrat · Web Experience Manager Candidate · Gladly">
+<meta property="og:description" content="A decade running marketing websites and digital experience in B2B, now AI-native. Built for Gladly's Web Experience Manager role.">
+<meta name="theme-color" content="#fdfbf5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#282c1c;
+  --ink-soft:#4a4f3a;
+  --muted:#7c8069;
+  --bg:#fdfbf5;
+  --bg-soft:#f4f2e7;
+  --bg-card:#ffffff;
+  --line:#e4e2d2;
+  --accent:#6d7c3a;
+  --accent-dark:#55622c;
+  --accent-soft:#edf0dc;
+  --accent-ink:#3c4520;
+  --orange:#e8973f;
+  --orange-soft:#fcecd9;
+  --orange-ink:#8a5217;
+  --band-bg:#272b18;
+  --band-ink:#f4f2e7;
+  --band-muted:#b9bda4;
+  --band-grad-a:#fdfbf5;
+  --band-grad-b:#f2b573;
+  --nav-bg:rgba(253,251,245,.86);
+  --radius:18px;
+  --shadow:0 1px 2px rgba(40,44,28,.05),0 12px 32px -12px rgba(40,44,28,.12);
+  --shadow-lg:0 2px 4px rgba(40,44,28,.06),0 24px 56px -16px rgba(40,44,28,.18);
+  --font:'Inter',system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+[data-theme="dark"]{
+  --ink:#eceadb;
+  --ink-soft:#c4c2ad;
+  --muted:#8f9278;
+  --bg:#171a0f;
+  --bg-soft:#1e2213;
+  --bg-card:#232818;
+  --line:#373d26;
+  --accent:#a8b95f;
+  --accent-dark:#c2d178;
+  --accent-soft:#2c331a;
+  --accent-ink:#d3dfa0;
+  --orange:#eba050;
+  --orange-soft:#33270f;
+  --orange-ink:#f2c48c;
+  --band-bg:#10120a;
+  --band-ink:#f4f2e7;
+  --band-muted:#9a9e83;
+  --band-grad-a:#f4f2e7;
+  --band-grad-b:#eba050;
+  --nav-bg:rgba(23,26,15,.86);
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 12px 32px -12px rgba(0,0,0,.5);
+  --shadow-lg:0 2px 4px rgba(0,0,0,.35),0 24px 56px -16px rgba(0,0,0,.6);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:500;display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--orange);border-radius:2px}
+h1,h2,h3{line-height:1.12;letter-spacing:-.02em;font-weight:800}
+h2{font-size:clamp(28px,4.2vw,44px);margin-bottom:16px}
+.lead{font-size:17.5px;color:var(--ink-soft);max-width:640px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:15px;transition:.2s;border:1.5px solid transparent;cursor:pointer;font-family:var(--font)}
+.btn-primary{background:var(--accent);color:#fff}
+[data-theme="dark"] .btn-primary{color:#171a0f}
+.btn-primary:hover{background:var(--accent-dark);transform:translateY(-1px);box-shadow:0 8px 24px -8px rgba(109,124,58,.55)}
+.btn-orange{background:var(--orange);color:#fff}
+[data-theme="dark"] .btn-orange{color:#171a0f}
+.btn-orange:hover{filter:brightness(.94);transform:translateY(-1px)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
+.btn-ghost:hover{border-color:var(--accent);transform:translateY(-1px)}
+
+/* ---------- NAV ---------- */
+header{position:fixed;inset:0 0 auto;z-index:50;background:var(--nav-bg);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.01em;white-space:nowrap}
+.nav-links{display:flex;align-items:center;gap:26px;font-size:14.5px;font-weight:500;color:var(--ink-soft)}
+.nav-links a:hover{color:var(--accent)}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.nav-cta .btn{padding:10px 20px;font-size:14px}
+.theme-btn{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);background:transparent;cursor:pointer;font-size:17px;display:grid;place-items:center;transition:.2s;color:var(--ink);flex-shrink:0}
+.theme-btn:hover{border-color:var(--orange);transform:rotate(15deg)}
+.menu-btn{display:none;background:none;border:none;font-size:26px;cursor:pointer;color:var(--ink)}
+@media(max-width:940px){
+  .nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:var(--bg);flex-direction:column;padding:24px;gap:18px;border-bottom:1px solid var(--line);box-shadow:var(--shadow-lg)}
+  .nav-links.open{display:flex}
+  .menu-btn{display:block}
+  .nav-cta .btn-ghost{display:none}
+  .nav-cta .btn-primary{display:none}
+}
+
+/* ---------- HERO ---------- */
+.hero{padding:170px 0 72px;background:
+  radial-gradient(900px 480px at 85% -10%,var(--accent-soft) 0%,transparent 60%),
+  radial-gradient(700px 420px at -10% 25%,var(--orange-soft) 0%,transparent 55%)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(30px,4.5vw,44px);margin:0 0 22px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .lead{margin-bottom:16px}
+.hero-note{font-size:14.5px;color:var(--muted);max-width:640px;margin-bottom:32px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
+.hero-roles{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.role-chip{font-family:var(--mono);font-size:12px;padding:7px 14px;border-radius:999px;background:var(--accent-soft);color:var(--accent-ink);font-weight:500}
+.role-chip:nth-child(even){background:var(--orange-soft);color:var(--orange-ink)}
+.hero-card{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-lg);padding:28px;position:relative}
+.hero-card::before{content:"// snapshot";font-family:var(--mono);font-size:11px;color:var(--muted);position:absolute;top:14px;right:18px}
+.hero-card dl{display:grid;gap:14px;font-size:14.5px}
+.hero-card dt{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.hero-card dd{font-weight:600;color:var(--ink)}
+.trust{margin-top:22px}
+.trust p{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.trust-logos{display:flex;gap:10px 30px;flex-wrap:wrap;align-items:center;font-weight:700;font-size:15.5px;letter-spacing:-.01em;color:var(--muted)}
+.trust-logos span{transition:.2s;opacity:.75}
+.trust-logos span:hover{color:var(--accent);opacity:1}
+@media(max-width:940px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:126px}.hero-card{max-width:480px}}
+
+/* ---------- STACK (after hero) ---------- */
+.stack-band{padding:52px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg)}
+.stack-band p.lbl{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
+.stack{display:flex;gap:10px;flex-wrap:wrap}
+.stack span{border:1px solid var(--line);border-radius:999px;padding:9px 17px;font-size:13.5px;font-weight:500;color:var(--ink-soft);transition:.2s;background:var(--bg-card)}
+.stack span:hover{border-color:var(--orange);color:var(--orange-ink);background:var(--orange-soft)}
+
+/* ---------- NUMBERS ---------- */
+.numbers{background:var(--band-bg);color:var(--band-ink);padding:72px 0}
+.numbers .eyebrow{color:var(--band-grad-b)}
+.num-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:44px}
+.num b{font-size:clamp(30px,3.6vw,46px);font-weight:800;letter-spacing:-.03em;display:block;line-height:1;background:linear-gradient(120deg,var(--band-grad-a),var(--band-grad-b));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.num span{font-size:13px;color:var(--band-muted);display:block;margin-top:10px;line-height:1.45}
+@media(max-width:940px){.num-grid{grid-template-columns:repeat(2,1fr);gap:28px 20px}}
+
+/* ---------- CAPABILITIES ---------- */
+.caps{background:var(--bg-soft)}
+.caps-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:52px;flex-wrap:wrap}
+.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.cap{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column}
+.cap:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--accent)}
+.cap .n{font-family:var(--mono);font-size:12px;color:var(--orange);margin-bottom:16px}
+.cap h3{font-size:19px;margin-bottom:12px}
+.cap p{font-size:14.5px;color:var(--ink-soft);flex:1}
+.cap .maps{margin-top:18px;padding-top:16px;border-top:1px dashed var(--line);font-family:var(--mono);font-size:11.5px;color:var(--muted);line-height:1.7}
+.cap .maps b{color:var(--accent);font-weight:500}
+@media(max-width:940px){.cap-grid{grid-template-columns:1fr}}
+
+/* ---------- EXPERIENCE ---------- */
+.exp-list{display:grid;gap:22px;margin-top:52px}
+.era{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:34px 36px;box-shadow:var(--shadow);display:grid;grid-template-columns:210px 1fr;gap:36px;transition:.25s}
+.era:hover{border-color:var(--accent);box-shadow:var(--shadow-lg)}
+.era-meta .tag{font-family:var(--mono);font-size:11.5px;color:var(--orange);letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:10px}
+.era-meta .org{font-weight:800;font-size:18px;letter-spacing:-.01em}
+.era-meta .period{font-size:13px;color:var(--muted);margin-top:6px;font-family:var(--mono)}
+.era-body h3{font-size:20px;margin-bottom:10px}
+.era-body>p{font-size:15px;color:var(--ink-soft);margin-bottom:16px}
+.era-body ul{list-style:none;display:grid;gap:10px;font-size:14.5px;color:var(--ink-soft)}
+.era-body li{padding-left:22px;position:relative}
+.era-body li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:600}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.chip{background:var(--accent-soft);color:var(--accent-ink);border-radius:10px;padding:8px 14px;font-size:12.5px;font-weight:600}
+.chip:nth-child(even){background:var(--orange-soft);color:var(--orange-ink)}
+.chip small{display:block;font-weight:400;font-size:11px;color:var(--muted);margin-top:1px}
+@media(max-width:940px){.era{grid-template-columns:1fr;gap:18px;padding:26px 22px}}
+
+/* ---------- VENTURES ---------- */
+.ventures{background:var(--bg-soft)}
+.ven-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:52px}
+.ven{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow);transition:.25s}
+.ven:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--orange)}
+.ven .n{font-family:var(--mono);font-size:12px;color:var(--orange);margin-bottom:16px}
+.ven h3{font-size:22px;margin-bottom:4px}
+.ven h3 a:hover{color:var(--accent)}
+.ven .url{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-bottom:16px}
+.ven p{font-size:14.5px;color:var(--ink-soft);margin-bottom:14px}
+.ven .proof{border-top:1px dashed var(--line);padding-top:16px;margin-top:4px;font-size:13.5px;color:var(--muted)}
+.ven .proof b{color:var(--ink);font-weight:600}
+@media(max-width:940px){.ven-grid{grid-template-columns:1fr}.ven{padding:26px 22px}}
+
+/* ---------- PORTFOLIO ---------- */
+.port-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+a.port{display:flex;flex-direction:column;background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);transition:.25s}
+a.port:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--accent)}
+.port h3{font-size:19px;margin-bottom:4px}
+.port h3 span{color:var(--orange);font-weight:400}
+.port .url{font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:12px}
+.port p{font-size:14.5px;color:var(--ink-soft);flex:1}
+@media(max-width:940px){.port-grid{grid-template-columns:1fr}}
+
+/* ---------- TESTIMONIALS ---------- */
+.quotes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.quote{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:.25s}
+.quote:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.quote .q-mark{font-size:44px;line-height:1;color:var(--orange);font-weight:800;margin-bottom:12px;font-family:Georgia,serif}
+.quote blockquote{font-size:15px;color:var(--ink-soft);flex:1}
+.quote .who{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.quote .who b{display:block;font-size:14.5px}
+.quote .who span{font-size:13px;color:var(--muted)}
+.quote-cta{background:var(--accent-soft);border-color:var(--accent)}
+.quote-cta blockquote{color:var(--accent-ink);font-weight:600}
+@media(max-width:940px){.quotes-grid{grid-template-columns:1fr}}
+
+/* ---------- FAQ ---------- */
+.faq{background:var(--bg-soft)}
+.faq-list{margin-top:52px;display:grid;gap:14px;max-width:820px}
+.faq-item{background:var(--bg-card);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.2s}
+.faq-item summary{cursor:pointer;padding:22px 26px;font-weight:700;font-size:16px;display:flex;justify-content:space-between;align-items:center;list-style:none;gap:16px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:22px;color:var(--orange);font-weight:400;transition:.2s;flex-shrink:0}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item[open]{border-color:var(--accent)}
+.faq-item .a{padding:0 26px 24px;font-size:15px;color:var(--ink-soft);max-width:680px}
+
+/* ---------- CONTACT ---------- */
+.contact{padding:110px 0}
+.contact-card{background:linear-gradient(135deg,var(--band-bg) 0%,#3a4222 70%,var(--accent-dark) 130%);border-radius:26px;padding:72px 60px;color:var(--band-ink);display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center;box-shadow:var(--shadow-lg)}
+[data-theme="dark"] .contact-card{background:linear-gradient(135deg,#0d0f07 0%,#242b12 70%,#3c4520 130%)}
+.contact-card h2{color:var(--band-ink)}
+.contact-card p{color:var(--band-muted);font-size:16px;max-width:480px;margin-bottom:26px}
+.contact-actions{display:grid;gap:14px}
+.contact-actions a{display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:16px 20px;font-weight:600;font-size:14.5px;transition:.2s;color:var(--band-ink)}
+.contact-actions a span{font-family:var(--mono);font-size:11px;color:var(--band-muted);display:block;font-weight:400;margin-top:2px}
+.contact-actions a:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
+@media(max-width:940px){.contact-card{grid-template-columns:1fr;padding:44px 24px}.contact{padding:80px 0}}
+
+/* ---------- MODAL ---------- */
+.modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.modal-backdrop{position:absolute;inset:0;background:rgba(20,22,12,.6);backdrop-filter:blur(4px)}
+.modal-box{position:relative;background:var(--bg-card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow-lg);width:100%;max-width:520px;max-height:90vh;overflow-y:auto;padding:36px 32px;animation:pop .25s ease}
+@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+.modal-box h3{font-size:24px;margin-bottom:8px}
+.modal-box .sub{font-size:14.5px;color:var(--muted);margin-bottom:24px}
+.modal-close{position:absolute;top:16px;right:16px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--bg);cursor:pointer;font-size:17px;color:var(--ink);display:grid;place-items:center;transition:.2s}
+.modal-close:hover{border-color:var(--orange);color:var(--orange)}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:13px;font-weight:600;margin-bottom:7px;color:var(--ink-soft)}
+.field input,.field textarea{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:13px 15px;font-size:15px;font-family:var(--font);background:var(--bg);color:var(--ink);transition:.2s;resize:vertical}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.field textarea{min-height:130px}
+.modal-box .btn{width:100%;justify-content:center;margin-top:6px}
+.modal-alt{margin-top:18px;text-align:center;font-size:13.5px;color:var(--muted)}
+.modal-alt a{color:var(--accent);font-weight:600}
+@media(max-width:560px){.modal{padding:12px}.modal-box{padding:28px 20px;border-radius:18px}}
+
+/* ---------- FOOTER ---------- */
+footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.foot-links{display:flex;gap:22px;flex-wrap:wrap}
+.foot-links a:hover{color:var(--accent)}
+
+/* ---------- REVEAL / MOBILE ---------- */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media(max-width:600px){
+  .wrap{padding:0 18px}
+  section{padding:68px 0}
+  .hero{padding:118px 0 56px}
+  .hero-ctas .btn{width:100%;justify-content:center}
+  .trust-logos{font-size:14px;gap:8px 20px}
+  .caps-head .lead{font-size:14.5px}
+  .era-body h3{font-size:18px}
+  .contact-actions a{padding:14px 16px}
+  .stack span{font-size:12.5px;padding:8px 14px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">Victor Ramayrat</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#experience">Experience</a>
+      <a href="#ventures">Ventures</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#proof">Proof</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://docs.google.com/document/d/1bj09yfN-rOLXcsGqb_XgAaR7zg3olyO68PBuBfw8vCg/edit?usp=sharing" target="_blank" rel="noopener">CV ↗</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">☾</button>
+      <button class="btn btn-primary open-modal" type="button">Get in touch</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-roles reveal">
+        <span class="role-chip">Web Experience</span>
+        <span class="role-chip">Web Operations</span>
+        <span class="role-chip">CMS Architecture</span>
+        <span class="role-chip">AI-Native Ops</span>
+      </div>
+      <h1 class="reveal">Hello Gladly, I am so glad you are here!</h1>
+      <p class="lead reveal">Candidate for Web Experience Manager who works well across interdisciplinary teams and various stakeholders, focused on web operations, digital experience, and conversion.</p>
+      <p class="hero-note reveal">For over ten years, I have owned and operated marketing websites end to end, from startup to enterprise. I led digital experience for global GTM teams at PwC and ran web operations at Tradeshift, where the CMO called me the very heart of the website's continued improvement.</p>
+      <div class="hero-ctas reveal">
+        <button class="btn btn-orange open-modal" type="button">Start a conversation</button>
+        <a class="btn btn-ghost" href="#experience">See the track record ↓</a>
+      </div>
+      <div class="trust reveal">
+        <p>Trusted by leaders at</p>
+        <div class="trust-logos">
+          <span>PwC</span><span>Tradeshift</span><span>Redkix → Meta</span><span>Palo Alto Networks</span><span>NTT Data</span>
+        </div>
+      </div>
+    </div>
+    <aside class="hero-card reveal" aria-label="Profile snapshot">
+      <dl>
+        <div><dt>Name</dt><dd>Victor Ramayrat, MBA</dd></div>
+        <div><dt>Target role</dt><dd>Web Experience Manager · Gladly</dd></div>
+        <div><dt>Why this fit</dt><dd>10+ years of web operations &amp; digital experience · sites, CMS platforms, and conversion owned hands-on</dd></div>
+        <div><dt>Edge</dt><dd>AI-native operator: agentic workflows already reducing manual work in production</dd></div>
+        <div><dt>Contact</dt><dd><a href="mailto:victor@ramayrat.com" style="color:var(--accent)">victor@ramayrat.com</a></dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- STACK -->
+<div class="stack-band">
+  <div class="wrap">
+    <p class="lbl">Tools &amp; technologies I operate</p>
+    <div class="stack reveal">
+      <span>Claude / OpenAI</span><span>WordPress</span><span>Contentful / Sanity</span><span>React / Next.js</span><span>Segment CDP</span><span>GA4 / GTM</span><span>Vercel</span><span>Cloudflare</span><span>HubSpot / Salesforce</span><span>n8n / Zapier</span><span>Clay / Apollo</span><span>Gradual</span>
+    </div>
+  </div>
+</div>
+
+<!-- NUMBERS -->
+<section class="numbers" id="numbers">
+  <div class="wrap">
+    <p class="eyebrow">01 / The numbers</p>
+    <h2 class="reveal">A career, measured in outcomes.</h2>
+    <div class="num-grid">
+      <div class="num reveal"><b data-count="10" data-suffix="+">0</b><span>Years leading web &amp; digital experience</span></div>
+      <div class="num reveal"><b data-count="5" data-prefix="$" data-suffix="M+">0</b><span>Revenue influenced across operator roles</span></div>
+      <div class="num reveal"><b data-count="1000" data-suffix="+">0</b><span>Qualified prospects generated</span></div>
+      <div class="num reveal"><b data-count="100" data-suffix="+">0</b><span>Digital assets &amp; sites shipped</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="caps" id="capabilities">
+  <div class="wrap">
+    <div class="caps-head">
+      <div>
+        <p class="eyebrow">02 / What I bring</p>
+        <h2 class="reveal">Capabilities that map to the role you're hiring for.</h2>
+      </div>
+      <p class="lead reveal" style="max-width:380px;font-size:15.5px">Not a generalist résumé, but a specific operating range proven across enterprise, scale-up, and founder contexts.</p>
+    </div>
+    <div class="cap-grid">
+      <article class="cap reveal">
+        <div class="n">/01</div>
+        <h3>Web Operations at Scale</h3>
+        <p>I run the web property as a product: governance, release operations, performance budgets, vendor and agency management, migrations, localization, and uptime. At Tradeshift I owned web operations end to end. The CMO called me "the very heart of our website's continued improvement."</p>
+        <div class="maps">maps to → <b>Head of Web Operations · Sr. Manager, Web</b></div>
+      </article>
+      <article class="cap reveal">
+        <div class="n">/02</div>
+        <h3>Digital Experience Leadership</h3>
+        <p>Five years as Senior Manager of Digital Experience at PwC Products &amp; Technology, leading DX for global GTM teams: sites, page systems, and journeys engineered to drive pipeline for direct sales, with UX and conversion at the forefront.</p>
+        <div class="maps">maps to → <b>Sr. Manager / Director, Digital Experience</b></div>
+      </article>
+      <article class="cap reveal">
+        <div class="n">/03</div>
+        <h3>CMS &amp; Martech Architecture</h3>
+        <p>I design content platforms teams can actually operate: headless CMS (Contentful, Sanity), WordPress at enterprise scale, component libraries, CDP and analytics instrumentation (Segment, GA4/GTM), and CRM integration (HubSpot, Salesforce).</p>
+        <div class="maps">maps to → <b>CMS Architect · Martech Platform Lead</b></div>
+      </article>
+      <article class="cap reveal">
+        <div class="n">/04</div>
+        <h3>AI-Native Automation</h3>
+        <p>I build AI into the operating model, not on top of it: agentic workflows (Claude, OpenAI), automation pipelines (n8n, Zapier), and content systems that scale output without scaling headcount. Proven in production across my own two platforms.</p>
+        <div class="maps">maps to → <b>AI Ops · Marketing Automation Leadership</b></div>
+      </article>
+      <article class="cap reveal">
+        <div class="n">/05</div>
+        <h3>Growth &amp; Demand Engineering</h3>
+        <p>At Redkix I single-handedly owned growth strategy and execution, setting new records month over month through the company's acquisition by Meta. I connect web experience directly to pipeline: experimentation, CRO, attribution, and lifecycle.</p>
+        <div class="maps">maps to → <b>Growth · Demand Gen Operations</b></div>
+      </article>
+      <article class="cap reveal">
+        <div class="n">/06</div>
+        <h3>Team &amp; Stakeholder Leadership</h3>
+        <p>I've operated inside a Big Four matrix, a Series-C scale-up, a seed-stage startup, and my own companies. I translate between executives, engineers, and creatives, and I've managed distributed teams, agencies, and virtual talent across time zones.</p>
+        <div class="maps">maps to → <b>Senior Manager+ people &amp; program leadership</b></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <p class="eyebrow">03 / Experience</p>
+    <h2 class="reveal">The track record, role by role.</h2>
+    <p class="lead reveal">A decade-plus of shipping: from enterprise digital experience to venture-scale growth to founder-operator.</p>
+
+    <div class="exp-list">
+      <article class="era reveal">
+        <div class="era-meta">
+          <span class="tag">Role 01 · Current</span>
+          <div class="org">Pegasus Strategy Co.</div>
+          <div class="period">2025 - Present</div>
+        </div>
+        <div class="era-body">
+          <h3>Marketing Engineer</h3>
+          <p>Embedded part-time with B2B teams (Series A to C) as a senior marketing engineer. This is the role companies bring in when they need leadership-level judgment with hands-on execution.</p>
+          <ul>
+            <li>Design and run web operations, automation, and digital experience systems for multiple client organizations simultaneously.</li>
+            <li>Stand up AI-assisted content and demand workflows that let lean teams operate like larger ones.</li>
+          </ul>
+          <div class="chips"><span class="chip">Fractional leadership<small>multi-client operating rhythm</small></span><span class="chip">AI-native delivery<small>agentic workflows in production</small></span></div>
+        </div>
+      </article>
+
+      <article class="era reveal">
+        <div class="era-meta">
+          <span class="tag">Role 02 · Enterprise</span>
+          <div class="org">PwC, Products &amp; Technology</div>
+          <div class="period">2019 - 2024</div>
+        </div>
+        <div class="era-body">
+          <h3>Senior Manager, Digital Experience</h3>
+          <p>Led digital experience for global go-to-market teams inside PwC's Products &amp; Technology group, owning the web platforms, page systems, and digital journeys that carried product marketing to market.</p>
+          <ul>
+            <li>Delivered the sites and page architectures that generated qualified pipeline for the direct sales team, cited by marketing leadership as a consistent driver of lead quality.</li>
+            <li>Operated CMS platforms, component systems, and analytics across a portfolio of product lines, balancing enterprise governance with launch speed.</li>
+            <li>Partnered daily with demand marketing, sales, and product leadership. "A rare double threat" with customer and user experience at the forefront, per the Head of Demand Marketing, PwC P&amp;T.</li>
+          </ul>
+          <div class="chips"><span class="chip">5 years<small>at Senior Manager level</small></span><span class="chip">Global GTM<small>multi-product portfolio</small></span><span class="chip">Pipeline-driving web<small>per marketing leadership</small></span></div>
+        </div>
+      </article>
+
+      <article class="era reveal">
+        <div class="era-meta">
+          <span class="tag">Role 03 · Scale-up</span>
+          <div class="org">Tradeshift</div>
+          <div class="period">2017 - 2019</div>
+        </div>
+        <div class="era-body">
+          <h3>Marketing Engineer · Web Operations</h3>
+          <p>Ran web operations for one of Europe's fastest-growing B2B fintech scale-ups, owning the marketing site platform, release operations, and the martech stack underneath it.</p>
+          <ul>
+            <li>Owned continuous improvement of the company website end to end: platform, performance, experimentation, and integrations.</li>
+            <li>Built the operational bridge between brand, demand gen, and engineering so the web could ship at startup speed with enterprise reliability.</li>
+          </ul>
+          <div class="chips"><span class="chip">"At the very heart"<small>of the website's improvement, per CMO</small></span><span class="chip">Full-stack web ops<small>platform to pipeline</small></span></div>
+        </div>
+      </article>
+
+      <article class="era reveal">
+        <div class="era-meta">
+          <span class="tag">Role 04 · Venture</span>
+          <div class="org">Redkix <span style="color:var(--muted);font-weight:400">(acq. by Meta)</span></div>
+          <div class="period">2016 - 2017</div>
+        </div>
+        <div class="era-body">
+          <h3>Head of Growth</h3>
+          <p>Owned the growth program of a venture-backed messaging startup, strategy and execution alike, through to the company's acquisition by Meta.</p>
+          <ul>
+            <li>Defined and ran the full growth engine: acquisition funnels, web experience, lifecycle, and analytics.</li>
+            <li>Set new user-growth records month over month. Per the CEO: "He defines a strategy and executes it."</li>
+          </ul>
+          <div class="chips"><span class="chip">Acquired by Meta<small>growth program through exit</small></span><span class="chip">Records MoM<small>owned strategy + execution</small></span></div>
+        </div>
+      </article>
+
+      <article class="era reveal">
+        <div class="era-meta">
+          <span class="tag">Role 05 · Enterprise</span>
+          <div class="org">Palo Alto Networks</div>
+          <div class="period">2016</div>
+        </div>
+        <div class="era-body">
+          <h3>Marketing Technology Innovation</h3>
+          <p>Drove marketing technology innovation initiatives for one of the world's leading cybersecurity companies. Early, hands-on work at the intersection of martech architecture and demand generation.</p>
+          <div class="chips"><span class="chip">Enterprise martech<small>innovation program</small></span></div>
+        </div>
+      </article>
+
+      <article class="era reveal">
+        <div class="era-meta">
+          <span class="tag">Role 06 · Origin</span>
+          <div class="org">Socient</div>
+          <div class="period">2009 - 2012</div>
+        </div>
+        <div class="era-body">
+          <h3>Founder · Digital Agency for Social Good</h3>
+          <p>Founded and ran a digital agency serving mission-driven organizations. The origin of a career-long pattern: build the system, run the operation, own the outcome.</p>
+          <div class="chips"><span class="chip">Founder DNA<small>from the very first chapter</small></span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VENTURES -->
+<section class="ventures" id="ventures">
+  <div class="wrap">
+    <p class="eyebrow">04 / Founder as proof</p>
+    <h2 class="reveal">What I build when I own the whole stack.</h2>
+    <p class="lead reveal">Alongside my corporate track record, I founded and operate two platforms. For a hiring manager, they're the strongest evidence available: strategy, architecture, build, operations, and P&amp;L. All mine, all in production.</p>
+    <div class="ven-grid">
+      <article class="ven reveal">
+        <div class="n">CASE /01</div>
+        <h3><a href="https://orbytt.ai" target="_blank" rel="noopener">Orbytt ↗</a></h3>
+        <div class="url">orbytt.ai · community talent platform</div>
+        <p>A community platform connecting Filipino virtual talent with businesses worldwide: groups, courses with verified certificates, job postings, member directory, and a curated resource library, in one product.</p>
+        <p class="proof"><b>What it proves:</b> platform architecture, community product design, marketplace operations, and running a multi-sided digital experience end to end. The same muscles a Senior Manager of Digital Experience uses, at full ownership.</p>
+      </article>
+      <article class="ven reveal">
+        <div class="n">CASE /02</div>
+        <h3><a href="https://socient.net" target="_blank" rel="noopener">Socient ↗</a></h3>
+        <div class="url">socient.net · AI-native studio</div>
+        <p>An AI-native studio for social enterprises and nonprofits: web experience design and build, operations automation, and content systems engineered to scale impact without scaling headcount.</p>
+        <p class="proof"><b>What it proves:</b> AI-native delivery models in production, with agentic workflows, automated content operations, and modern web builds shipped for real clients on real timelines. This is what I bring inside an organization.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="wrap">
+    <p class="eyebrow">05 / Portfolio</p>
+    <h2 class="reveal">Selected work, live in production.</h2>
+    <p class="lead reveal">A sample of the platforms and web properties I have architected, built, and operated. Each card opens in a new tab.</p>
+    <div class="port-grid">
+      <a class="port reveal" href="https://orbytt.ai" target="_blank" rel="noopener">
+        <h3>Orbytt <span>↗</span></h3>
+        <div class="url">orbytt.ai</div>
+        <p>Talent discovery platform for offshore talent. Built from scratch on open-source technologies.</p>
+      </a>
+      <a class="port reveal" href="https://socient.net" target="_blank" rel="noopener">
+        <h3>Socient <span>↗</span></h3>
+        <div class="url">socient.net</div>
+        <p>Marketing and content engineering services: website management, marketing automation, and AEO/GEO/SEO visibility.</p>
+      </a>
+      <a class="port reveal" href="https://pegasusstrategy.co" target="_blank" rel="noopener">
+        <h3>Pegasus Strategy Co. <span>↗</span></h3>
+        <div class="url">pegasusstrategy.co</div>
+        <p>Web presence for an AI-powered team. Built on Next.js and Sanity CMS.</p>
+      </a>
+      <a class="port reveal" href="https://forwardgtm.com" target="_blank" rel="noopener">
+        <h3>ForwardGTM <span>↗</span></h3>
+        <div class="url">forwardgtm.com</div>
+        <p>Community-powered content hub for AI-forward GTM professionals.</p>
+      </a>
+      <a class="port reveal" href="https://edgemonsters.dev" target="_blank" rel="noopener">
+        <h3>EdgeMonsters <span>↗</span></h3>
+        <div class="url">edgemonsters.dev</div>
+        <p>Platform that supports the developer and open-source community.</p>
+      </a>
+      <a class="port reveal" href="https://riskproducts-stg.web.app/" target="_blank" rel="noopener">
+        <h3>PwC Risk <span>↗</span></h3>
+        <div class="url">pwc products · brand site</div>
+        <p>Brand site for PwC's Risk products. Architected, developed, and managed as part of the PwC Products portfolio.</p>
+      </a>
+      <a class="port reveal" href="https://wf-microsite-stg.web.app/" target="_blank" rel="noopener">
+        <h3>PwC Workforce <span>↗</span></h3>
+        <div class="url">pwc products · microsite</div>
+        <p>Microsite for PwC's Workforce products, from architecture through build and ongoing management.</p>
+      </a>
+      <a class="port reveal" href="https://wealth-microsite-stg.web.app" target="_blank" rel="noopener">
+        <h3>PwC Wealth Compass <span>↗</span></h3>
+        <div class="url">pwc products · microsite</div>
+        <p>Microsite for PwC's Wealth Compass product: architecture, development, and management.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section id="proof">
+  <div class="wrap">
+    <p class="eyebrow">06 / What leaders say</p>
+    <h2 class="reveal">Endorsed by the people I've shipped for.</h2>
+    <div class="quotes-grid">
+      <article class="quote reveal">
+        <div class="q-mark">“</div>
+        <blockquote>Web experience is the keystone of modern marketing. Victor is that rare mix of strategic visionary who can still focus in on the detail. Projects come in ahead of time and exceed expectations. Bottom line: his work converts, and it's beautiful.</blockquote>
+        <div class="who"><b>Oliver Lash-Williams</b><span>Demand Gen Leader, NTT Data</span></div>
+      </article>
+      <article class="quote reveal">
+        <div class="q-mark">“</div>
+        <blockquote>He defines a strategy and executes it. He single-handedly owned the strategy and execution of our growth program, and got us to new records month over month.</blockquote>
+        <div class="who"><b>Oudi Antebi</b><span>Former CEO, Redkix (acq. by Meta)</span></div>
+      </article>
+      <article class="quote reveal">
+        <div class="q-mark">“</div>
+        <blockquote>Victor gets it done. And has a very high quality bar. He is at the very heart of our website's continued improvement.</blockquote>
+        <div class="who"><b>John Eng</b><span>Former CMO, Tradeshift</span></div>
+      </article>
+      <article class="quote reveal">
+        <div class="q-mark">“</div>
+        <blockquote>Victor is a rare double threat. Everything he works on has customer and user experience at the forefront, with skills across many web platforms and tools.</blockquote>
+        <div class="who"><b>Jason Stewart</b><span>Head of Demand Marketing, PwC P&amp;T</span></div>
+      </article>
+      <article class="quote reveal">
+        <div class="q-mark">“</div>
+        <blockquote>He consistently produces quality sites, page layouts and adapts the content provided to drive leads for our direct sales team.</blockquote>
+        <div class="who"><b>Kat Mandelstein</b><span>P&amp;T Marketing Leader, PwC</span></div>
+      </article>
+      <article class="quote quote-cta reveal">
+        <div class="q-mark">→</div>
+        <blockquote>References available on request, including leaders from PwC, Tradeshift, and Redkix who will take the call.</blockquote>
+        <div class="who"><a href="#" class="open-modal" style="color:var(--accent);font-weight:700">Request references →</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <p class="eyebrow">07 / Frequently asked</p>
+    <h2 class="reveal">What hiring managers ask me most.</h2>
+    <div class="faq-list">
+      <details class="faq-item reveal" open>
+        <summary>What roles are you targeting?</summary>
+        <div class="a">Senior Manager and above in Web Operations, Digital Experience, CMS/Martech Architecture, or adjacent digital platform leadership. The common thread: roles where the web property is treated as a product with a revenue mandate, and where the leader is expected to both set strategy and understand the build.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>What's the through-line of your career?</summary>
+        <div class="a">Taking ambiguous strategic problems and turning them into shipped systems. Every chapter, from PwC's global GTM web platforms to Tradeshift's web operations to Redkix's growth engine to my own two platforms, is the same motion at a different scale: define the strategy, architect the system, ship it, and measure it against revenue.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Why did you spend the last stretch as a founder?</summary>
+        <div class="a">After a decade operating for others, I built and now run two production platforms end to end: Orbytt and Socient. It made me a sharper leader. I've owned the P&amp;L, the architecture, the roadmap, and the operations with no one to escalate to. I'm bringing that full-ownership operating mode back inside an organization, and my ventures run without requiring my full-time attention.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>How do you use AI in your work?</summary>
+        <div class="a">As infrastructure, not garnish. I build agentic workflows for content operations, QA, personalization, and reporting, all in production for real clients and my own platforms. For a team, that translates into a leader who can redesign the operating model around AI rather than bolt tools onto old processes.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Are you open to hands-on work, or leadership only?</summary>
+        <div class="a">Both, deliberately. I lead through systems and people, but I've never stopped building. Teams get a manager who can review the architecture, unblock the implementation, and represent the work credibly to executives.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <div>
+        <p class="eyebrow" style="color:var(--band-grad-b)">08 / Next step</p>
+        <h2>Hiring for a senior digital leader? Let's talk.</h2>
+        <p>Send a role, a JD, or a problem statement. I read everything that comes through, and I'll give you an honest read on fit, including when it isn't one.</p>
+        <button class="btn btn-orange open-modal" type="button">Send a message</button>
+      </div>
+      <div class="contact-actions">
+        <a href="mailto:victor@ramayrat.com">Email me directly<span>victor@ramayrat.com</span></a>
+        <a href="https://linkedin.com/in/victorramayrat" target="_blank" rel="noopener">Connect on LinkedIn ↗<span>linkedin.com/in/victorramayrat</span></a>
+        <a href="https://docs.google.com/document/d/1bj09yfN-rOLXcsGqb_XgAaR7zg3olyO68PBuBfw8vCg/edit?usp=sharing" target="_blank" rel="noopener">Download my CV ↗<span>full chronological résumé</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- CONTACT MODAL -->
+<div class="modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-box">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <h3 id="modalTitle">Let's connect.</h3>
+    <p class="sub">A few sentences about the role, the team, or the problem you're hiring to solve. I read everything that comes through.</p>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="2b4239f8-d31d-48a2-9af2-20747b86828b">
+      <input type="hidden" name="subject" value="New message from victor.ramayrat.com">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="field">
+        <label for="f-name">Your name</label>
+        <input type="text" id="f-name" name="name" placeholder="Jane Smith" required>
+      </div>
+      <div class="field">
+        <label for="f-email">Email</label>
+        <input type="email" id="f-email" name="email" placeholder="jane@company.com" required>
+      </div>
+      <div class="field">
+        <label for="f-message">Message</label>
+        <textarea id="f-message" name="message" placeholder="Tell me about the role or what you're building..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send message</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Victor Ramayrat, MBA · Senior leader, Web Operations &amp; Digital Experience</div>
+    <div class="foot-links">
+      <a href="https://linkedin.com/in/victorramayrat" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:victor@ramayrat.com">Email</a>
+      <a href="/llms.txt">llms.txt</a>
+      <a href="/profile.json">profile.json</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Theme toggle (persisted; defaults to system preference)
+const root=document.documentElement,themeBtn=document.getElementById('themeBtn');
+const setTheme=t=>{root.dataset.theme=t;themeBtn.textContent=t==='dark'?'☀':'☾';
+  document.querySelector('meta[name="theme-color"]').content=t==='dark'?'#171a0f':'#fdfbf5';
+  try{localStorage.setItem('theme',t)}catch(e){}};
+let saved=null;try{saved=localStorage.getItem('theme')}catch(e){}
+setTheme(saved||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+themeBtn.addEventListener('click',()=>setTheme(root.dataset.theme==='dark'?'light':'dark'));
+
+// Mobile nav
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+
+// Contact modal
+const modal=document.getElementById('contactModal');
+const openModal=e=>{e.preventDefault();modal.classList.add('open');document.body.style.overflow='hidden';
+  setTimeout(()=>document.getElementById('f-name').focus(),80)};
+const closeModal=()=>{modal.classList.remove('open');document.body.style.overflow=''};
+document.querySelectorAll('.open-modal').forEach(el=>el.addEventListener('click',openModal));
+modal.querySelectorAll('[data-close]').forEach(el=>el.addEventListener('click',closeModal));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});
+
+// Reveal on scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// Count-up numbers
+const nio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  const el=e.target,end=+el.dataset.count,pre=el.dataset.prefix||'',suf=el.dataset.suffix||'';
+  const dur=1400,t0=performance.now();
+  const step=t=>{const p=Math.min((t-t0)/dur,1),v=Math.round(end*(1-Math.pow(1-p,3)));
+    el.textContent=pre+v.toLocaleString()+suf;
+    if(p<1)requestAnimationFrame(step)};
+  requestAnimationFrame(step);nio.unobserve(el);
+}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>nio.observe(el));
+</script>
+</body>
+</html>
