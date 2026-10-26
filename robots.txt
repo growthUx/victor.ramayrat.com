@@ -1,2 +1,22 @@
+# Search engines and AI assistants may read the public site.
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /*.docx$
+Disallow: /victor-ramayrat-cv.pdf
+
+# AI search and assistant crawlers (named so the rules are explicit)
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /*.docx$
+Disallow: /victor-ramayrat-cv.pdf
+
+Sitemap: https://victor.ramayrat.com/sitemap.xml
