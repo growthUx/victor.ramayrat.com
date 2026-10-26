@@ -87,6 +87,10 @@ digital assets shipped.
 His ventures run without his full-time attention, so he can commit
 fully to one team.
 
+Hiring status: Victor is not actively looking for a new role. He is open
+to a full-time role that is a strong fit for the needs of the company,
+where his impact and the value he brings make a clear difference.
+
 ## Tools & technologies
 
 AEO and GEO, schema (JSON-LD), llms.txt, Claude / Claude Code / OpenAI,
