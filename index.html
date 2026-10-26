@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Victor Ramayrat · Marketing Engineer · AI Search (AEO/GEO), Content Engineering, GTM Stack</title>
-<meta name="description" content="Victor Ramayrat is a marketing engineer in San Jose, California. He builds AI search (AEO and GEO) programs, content systems, HubSpot workflows, and GTM stack integrations.">
+<meta name="description" content="Victor Ramayrat is a marketing engineer in San Jose, California. He turns manual marketing work into systems: AI search (AEO and GEO), content workflows, AI agents, and HubSpot automation.">
 <meta name="author" content="Victor Ramayrat">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://victor.ramayrat.com/">
@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:url" content="https://victor.ramayrat.com/">
 <meta property="og:title" content="Victor Ramayrat · Marketing Engineer">
-<meta property="og:description" content="Build an AI-powered marketing system that scales and consistently works for your sales pipeline.">
+<meta property="og:description" content="A marketing engineer who turns manual marketing work into systems your team uses every day.">
 <meta name="theme-color" content="#fdfbf5">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -244,25 +244,36 @@ a.port:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color
 .contact-actions a:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
 @media(max-width:940px){.contact-card{grid-template-columns:1fr;padding:44px 24px}.contact{padding:80px 0}}
 
-/* ---------- MODAL ---------- */
-.modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
-.modal.open{display:flex}
-.modal-backdrop{position:absolute;inset:0;background:rgba(20,22,12,.6);backdrop-filter:blur(4px)}
-.modal-box{position:relative;background:var(--bg-card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow-lg);width:100%;max-width:520px;max-height:90vh;overflow-y:auto;padding:36px 32px;animation:pop .25s ease}
-@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
-.modal-box h3{font-size:24px;margin-bottom:8px}
-.modal-box .sub{font-size:14.5px;color:var(--muted);margin-bottom:24px}
-.modal-close{position:absolute;top:16px;right:16px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--bg);cursor:pointer;font-size:17px;color:var(--ink);display:grid;place-items:center;transition:.2s}
-.modal-close:hover{border-color:var(--orange);color:var(--orange)}
+/* ---------- CONTACT DRAWER ---------- */
+.drawer{position:fixed;inset:0;z-index:100;visibility:hidden;pointer-events:none}
+.drawer.open{visibility:visible;pointer-events:auto}
+.drawer-backdrop{position:absolute;inset:0;background:rgba(20,22,12,.55);backdrop-filter:blur(3px);opacity:0;transition:opacity .3s ease}
+.drawer.open .drawer-backdrop{opacity:1}
+.drawer-panel{position:absolute;top:0;right:0;height:100%;width:min(480px,100%);background:var(--bg-card);border-left:1px solid var(--line);box-shadow:var(--shadow-lg);transform:translateX(100%);transition:transform .32s cubic-bezier(.2,.8,.2,1);overflow-y:auto;padding:40px 32px 28px;display:flex;flex-direction:column}
+.drawer.open .drawer-panel{transform:none}
+.drawer-panel .eyebrow{margin-bottom:10px}
+.drawer-panel h3{font-size:26px;margin-bottom:8px}
+.drawer-panel .sub{font-size:14.5px;color:var(--muted);margin-bottom:26px}
+.drawer-close{position:absolute;top:16px;right:16px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--bg);cursor:pointer;font-size:17px;color:var(--ink);display:grid;place-items:center;transition:.2s}
+.drawer-close:hover{border-color:var(--orange);color:var(--orange)}
+.drawer-panel .btn{width:100%;justify-content:center;margin-top:6px}
+.drawer-panel .btn[disabled]{opacity:.6;cursor:progress}
+.form-status{font-size:13.5px;margin-top:12px;min-height:1em;color:var(--muted)}
+.form-status.err{color:#b4442c}
+.form-done{display:none;padding:22px;border:1px solid var(--accent);border-radius:14px;background:var(--accent-soft);color:var(--accent-ink);font-size:15px}
+.form-done b{display:block;font-size:17px;margin-bottom:6px}
+.drawer.sent form{display:none}
+.drawer.sent .form-done{display:block}
+.drawer-foot{margin-top:auto;padding-top:22px;font-size:13px;color:var(--muted)}
+.drawer-foot a{color:var(--accent);font-weight:600}
+.splitforms-attribution{margin-top:12px;font-size:11px;color:#888;text-align:right}
+.splitforms-attribution a{color:#888;text-decoration:none}
+@media(max-width:560px){.drawer-panel{padding:36px 20px 24px}}
 .field{margin-bottom:16px}
 .field label{display:block;font-size:13px;font-weight:600;margin-bottom:7px;color:var(--ink-soft)}
 .field input,.field textarea{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:13px 15px;font-size:15px;font-family:var(--font);background:var(--bg);color:var(--ink);transition:.2s;resize:vertical}
 .field input:focus,.field textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
 .field textarea{min-height:130px}
-.modal-box .btn{width:100%;justify-content:center;margin-top:6px}
-.modal-alt{margin-top:18px;text-align:center;font-size:13.5px;color:var(--muted)}
-.modal-alt a{color:var(--accent);font-weight:600}
-@media(max-width:560px){.modal{padding:12px}.modal-box{padding:28px 20px;border-radius:18px}}
 
 /* ---------- FOOTER ---------- */
 footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:var(--muted)}
@@ -766,7 +777,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       <a href="#portfolio">Portfolio</a>
       <a href="#proof">Proof</a>
       <a href="#faq">FAQ</a>
-      <a href="/victor-ramayrat-cv.pdf?v=2026-10-26" target="_blank" rel="noopener">CV ↗</a>
+      <a href="/victor-ramayrat-cv.pdf?v=2026-10-26b" target="_blank" rel="noopener">CV ↗</a>
     </nav>
     <div class="nav-cta">
       <button class="theme-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">☾</button>
@@ -785,12 +796,13 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       <div class="hero-roles reveal">
         <span class="role-chip">Marketing Systems Engineering</span>
         <span class="role-chip">GTM Stack Integrations</span>
-        <span class="role-chip">AI Search</span>
+        <span class="role-chip">AI Search Growth Marketer</span>
         <span class="role-chip">Content Engineering</span>
+        <span class="role-chip">Digital Experience</span>
       </div>
-      <h1 class="reveal">Do you need someone to own part or your whole marketing technology stack?</h1>
-      <p class="lead reveal">As a CMO, you are focused on the strategic go-to-market motion for your company. You need someone who is proven and dependable to architect and manage the technology engine.<br /><br />
-        As an experienced founder+operator, I own the systems that power marketing: from CMS management, AI search visibility, tracking, forms configuration, CRM workflow builds to API integrations.<br /><br />The result for each team: marketing ships faster and sales get leads it can trust. Let's build something together.</p>
+      <h1 class="reveal">I turn manual marketing work into <em>systems</em> your team uses every day.</h1>
+      <p class="lead reveal">Your marketing team has more work than people. Much of that work is manual: research, briefs, content, reports, and CRM updates.<br /><br />
+        I am a marketing engineer. I build the systems that do this work: AI search (AEO and GEO) programs, content workflows, AI agents, and HubSpot automation. I work inside your team, so each system fits how your team works.<br /><br />The result: your team ships more with the same people, AI assistants can find and cite your brand, and your CRM data stays clean. Let's build something together.</p>
       <div class="hero-ctas reveal">
         <button class="btn btn-orange open-modal" type="button">Start a conversation</button>
         <a class="btn btn-ghost" href="#capabilities">See the impact ↓</a>
@@ -806,7 +818,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       <dl>
         <div><dt>Name</dt><dd>Victor Ramayrat, MBA</dd></div>
         <div><dt>Target role</dt><dd>Marketing Engineer</dd></div>
-        <div><dt>Edge</dt><dd>Full-stack engineer with founder-mentality who speaks marketing, sales, and IT</dd></div>
+        <div><dt>Edge</dt><dd>A marketer who builds, with 10+ years in marketing teams and four ventures of his own</dd></div>
         <div><dt>Contact</dt><dd><a href="mailto:victor@ramayrat.com" style="color:var(--accent)">victor@ramayrat.com</a></dd></div>
       </dl>
     </aside>
@@ -818,7 +830,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
   <div class="wrap">
     <p class="lbl">Tools &amp; technologies I operate</p>
     <div class="stack reveal">
-      <span>HTML / CSS / JavaScript</span><span>TypeScript / React / Next.js</span><span>Framer / Webflow</span><span>WordPress / Contentful / Sanity</span><span>Google Tag Manager / GA4</span><span>Segment / RudderStack</span><span>BigQuery / SQL</span><span>AEO / GEO</span><span>Schema / JSON-LD / llms.txt</span><span>HubSpot Workflows / Custom Objects</span><span>Salesforce</span><span>Gradual</span><span>Eloqua</span><span>n8n / Zapier / Webhooks</span><span>Vercel / Cloudflare</span><span>Claude Code / Cursor</span>
+      <span>HTML / CSS / JavaScript</span><span>TypeScript / React / Next.js</span><span>Framer / Webflow</span><span>WordPress / Contentful / Sanity</span><span>Google Tag Manager / GA4</span><span>Segment</span><span>BigQuery / SQL</span><span>AEO / GEO</span><span>Schema / JSON-LD / llms.txt</span><span>HubSpot Workflows / Custom Objects</span><span>Salesforce</span><span>Gradual</span><span>Eloqua</span><span>n8n / Zapier / Webhooks</span><span>Vercel / Cloudflare</span><span>Claude Code / Cursor</span>
     </div>
   </div>
 </div>
@@ -903,12 +915,12 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
           <div class="period">2025 - Present</div>
         </div>
         <div class="era-body">
-          <h3>Marketing Engineer, GTM Engineering (Fractional)</h3>
+          <h3>Marketing Engineer Consultant (Fractional)</h3>
           <p>I work as the marketing engineer inside client marketing teams. Clients include B2B SaaS companies from Series A to Series C, and nonprofits.</p>
           <ul>
             <li>One Purse (nonprofit): moved the marketing database from Mailchimp, and donor, contact, and event records from Zoho, to HubSpot. Built custom objects for Events Ticketing and Purse Donations, a kiosk intake form for live events, HubSpot forms for the website, and newsletter workflows.</li>
             <li>ITIL.com community (PeopleCert): build the community for ITIL practitioners on Gradual.</li>
-            <li>SaaS clients: administer HubSpot properties, pipelines, lifecycle stages, lead scoring, and routing workflows. Connect website forms and events to HubSpot with Segment, RudderStack, Zapier, and n8n.</li>
+            <li>SaaS clients: administer HubSpot properties, pipelines, lifecycle stages, lead scoring, and routing workflows. Connect website forms and events to HubSpot with Segment, Zapier, and n8n.</li>
           </ul>
           <div class="chips"><span class="chip">HubSpot custom objects<small>donations · event ticketing</small></span><span class="chip">Community on Gradual<small>ITIL.com</small></span></div>
         </div>
@@ -1210,7 +1222,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       <div class="contact-actions">
         <a href="mailto:victor@ramayrat.com">Email me directly<span>victor@ramayrat.com</span></a>
         <a href="https://linkedin.com/in/victorramayrat" target="_blank" rel="noopener">Connect on LinkedIn ↗<span>linkedin.com/in/victorramayrat</span></a>
-        <a href="/victor-ramayrat-cv.pdf?v=2026-10-26" target="_blank" rel="noopener" download>Download my CV ↗<span>PDF résumé</span></a>
+        <a href="/victor-ramayrat-cv.pdf?v=2026-10-26b" target="_blank" rel="noopener" download>Download my CV ↗<span>PDF résumé</span></a>
       </div>
     </div>
   </div>
@@ -1218,33 +1230,38 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
 
 </main>
 
-<!-- CONTACT MODAL -->
-<div class="modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-  <div class="modal-backdrop" data-close></div>
-  <div class="modal-box">
-    <button class="modal-close" data-close aria-label="Close">✕</button>
-    <h3 id="modalTitle">Let's connect.</h3>
-    <p class="sub">A few sentences about the role, the team, or the problem you're hiring to solve. I read everything that comes through.</p>
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="2b4239f8-d31d-48a2-9af2-20747b86828b">
-      <input type="hidden" name="subject" value="New message from victor.ramayrat.com">
+<!-- CONTACT DRAWER -->
+<div class="drawer" id="contactDrawer" aria-hidden="true">
+  <div class="drawer-backdrop" data-close></div>
+  <aside class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <button class="drawer-close" type="button" data-close aria-label="Close">✕</button>
+    <p class="eyebrow">Get in touch</p>
+    <h3 id="drawerTitle">Let's connect.</h3>
+    <p class="sub">Tell me about the role, the team, or the problem you want to solve. I read every message.</p>
+    <form id="contactForm" action="https://splitforms.com/api/submit" method="POST">
+      <input type="hidden" name="access_key" value="1ba95ec0c5b149bb837a4177ef7ef795">
       <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
       <div class="field">
-        <label for="f-name">Your name</label>
-        <input type="text" id="f-name" name="name" placeholder="Jane Smith" required>
+        <label for="f-name">Name</label>
+        <input type="text" id="f-name" name="name" placeholder="Jane Doe" autocomplete="name" required>
       </div>
       <div class="field">
         <label for="f-email">Email</label>
-        <input type="email" id="f-email" name="email" placeholder="jane@company.com" required>
+        <input type="email" id="f-email" name="email" placeholder="jane@company.com" autocomplete="email" required>
       </div>
       <div class="field">
         <label for="f-message">Message</label>
-        <textarea id="f-message" name="message" placeholder="Tell me about the role or what you're building..." required></textarea>
+        <textarea id="f-message" name="message" placeholder="Your message…" required></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Send message</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
     </form>
-  </div>
+    <div class="form-done" role="status" aria-live="polite"><b>Thank you. Your message is sent.</b>I will reply to the email address you gave.</div>
+    <p class="splitforms-attribution">Powered by <a href="https://splitforms.com" target="_blank" rel="sponsored noopener">splitforms</a></p>
+    <div class="drawer-foot">You can also email me at <a href="mailto:victor@ramayrat.com">victor@ramayrat.com</a>.</div>
+  </aside>
 </div>
+<script src="https://splitforms.com/embed.js" async></script>
 
 <footer>
   <div class="wrap foot">
@@ -1273,14 +1290,30 @@ const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementByI
 menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
 navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
 
-// Contact modal
-const modal=document.getElementById('contactModal');
-const openModal=e=>{e.preventDefault();modal.classList.add('open');document.body.style.overflow='hidden';
-  setTimeout(()=>document.getElementById('f-name').focus(),80)};
-const closeModal=()=>{modal.classList.remove('open');document.body.style.overflow=''};
-document.querySelectorAll('.open-modal').forEach(el=>el.addEventListener('click',openModal));
-modal.querySelectorAll('[data-close]').forEach(el=>el.addEventListener('click',closeModal));
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});
+// Contact drawer (splitforms)
+const drawer=document.getElementById('contactDrawer'),cform=document.getElementById('contactForm');
+let lastFocus=null;
+const openDrawer=e=>{e.preventDefault();lastFocus=document.activeElement;drawer.classList.add('open');drawer.setAttribute('aria-hidden','false');
+  document.body.style.overflow='hidden';setTimeout(()=>{const f=drawer.classList.contains('sent')?drawer.querySelector('.drawer-close'):document.getElementById('f-name');f.focus()},120)};
+const closeDrawer=()=>{drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true');document.body.style.overflow='';if(lastFocus)lastFocus.focus()};
+document.querySelectorAll('.open-modal').forEach(el=>el.addEventListener('click',openDrawer));
+drawer.querySelectorAll('[data-close]').forEach(el=>el.addEventListener('click',closeDrawer));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&drawer.classList.contains('open'))closeDrawer()});
+cform.addEventListener('submit',async e=>{
+  e.preventDefault();
+  const btn=cform.querySelector('button[type=submit]'),st=cform.querySelector('.form-status');
+  btn.disabled=true;btn.textContent='Sending…';st.className='form-status';st.textContent='';
+  try{
+    const r=await fetch(cform.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(cform)});
+    const d=await r.json().catch(()=>({}));
+    if(!r.ok||d.success===false)throw new Error(d.message||'The message did not send.');
+    if(window.splitforms&&window.splitforms.done)window.splitforms.done(cform);
+    cform.reset();drawer.classList.add('sent');drawer.querySelector('.drawer-close').focus();
+  }catch(err){
+    st.className='form-status err';
+    st.textContent=(err.message||'The message did not send.')+' Try again, or email victor@ramayrat.com.';
+  }finally{btn.disabled=false;btn.textContent='Send message'}
+});
 
 // Reveal on scroll
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
