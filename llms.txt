@@ -47,10 +47,11 @@ influenced across operator roles; 1,000+ qualified prospects generated;
   production.
 - [Pegasus Strategy Co.](https://pegasusstrategy.co): Web presence for
   an AI-powered team. Built on Next.js and Sanity CMS.
-- [ForwardGTM](https://forwardgtm.com): Community-powered content hub
-  for AI-forward GTM professionals.
-- [EdgeMonsters](https://edgemonsters.dev): Platform that supports the
-  developer and open-source community.
+- [Prema](https://prema.ai): AI service that calls the people you care
+  about on a schedule and sends you a short note on how they are doing.
+- [MotherBotanist](https://motherbotanist.com): Office plant care for
+  Bay Area companies, with a client portal for plant photos and care
+  records.
 
 Orbytt and Socient run without requiring Victor's full-time attention;
 he is available for full-time senior leadership roles.
