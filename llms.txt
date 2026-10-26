@@ -23,6 +23,10 @@ digital assets shipped.
   audit; schema (JSON-LD) on the WordPress site; answer-first pages and
   FAQs that cover follow-up questions; llms.txt; crawler rules for
   GPTBot, ClaudeBot, and PerplexityBot.
+- Search and AI visibility optimization for the sites Victor publishes:
+  AgentLedGTM (agentledgtm.com), Orbytt (orbytt.ai), Prema (prema.ai),
+  DirectCareHQ (directcarehq.com), SideHustle (hustle.sh), and The
+  Business of Music (businessofmusic.co).
 - Community building for the ITIL.com community (PeopleCert) on Gradual,
   as a consultant for Pegasus Strategy Co.
 - HubSpot build for One Purse (onepurse.org), a nonprofit, as a
