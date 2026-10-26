@@ -19,10 +19,12 @@ digital assets shipped.
 ## Recent client work
 
 - AI search (AEO and GEO) for Canine Companions (canine.org), a national
-  nonprofit, as a consultant for MarketGrowth CX: AI search visibility
+  nonprofit and a Socient.net client: AI search visibility
   audit; schema (JSON-LD) on the WordPress site; answer-first pages and
   FAQs that cover follow-up questions; llms.txt; crawler rules for
   GPTBot, ClaudeBot, and PerplexityBot.
+- Community building for the ITIL.com community (PeopleCert) on Gradual,
+  as a consultant for Pegasus Strategy Co.
 - HubSpot build for One Purse (onepurse.org), a nonprofit, as a
   consultant for Pegasus Strategy Co.: Mailchimp to HubSpot migration;
   Zoho donor, contact, and event record cleanup and migration; custom
@@ -32,21 +34,24 @@ digital assets shipped.
 
 ## Experience
 
-- 2025–Present: Marketing Engineer, Pegasus Strategy Co. Embedded with
-  Series A to C B2B teams and nonprofit clients for HubSpot, marketing
-  automation, and website systems.
-- 2025–Present: Founder and Publisher, MarketGrowth CX. AI search and
-  marketing technology consulting; publisher of AgentLedGTM and Orbytt.
-- 2019–2024: Senior Manager, Digital Experience, PwC Products &
-  Technology, led digital experience for global GTM teams; sites and
-  page systems that drove qualified pipeline for direct sales.
-- 2017–2019: Marketing Engineer (Web Operations), Tradeshift, owned
-  web operations end to end; "at the very heart of our website's
-  continued improvement" (CMO).
-- 2016–2017: Head of Growth, Redkix (acquired by Meta), single-handedly
-  owned growth strategy and execution; new records month over month
-  through acquisition.
-- 2016: Marketing Technology Innovation, Palo Alto Networks.
+- 2025–Present: Marketing Engineer, GTM Engineering (Fractional), Pegasus
+  Strategy Co. One Purse HubSpot build (custom objects, migrations,
+  forms, workflows); ITIL.com community on Gradual; HubSpot
+  administration and integrations for B2B SaaS clients.
+- 2025–Present: Founder and Publisher, MarketGrowth. Consulting and
+  publishing company; Socient.net is its studio brand. AEO and GEO for
+  Canine Companions, a Socient.net client.
+- 2019–2024: Senior Manager, Digital Performance, PwC Products &
+  Technology. Web operations stack for PwC product brands; GTM and
+  Eloqua integrations; lead capture for direct sales.
+- 2018–2019: Marketing Technology Innovation Developer, Palo Alto
+  Networks. Drift adoption from 50% to 80%; $2M+ monthly pipeline.
+- 2016–2018: Head of Marketing and Growth, Redkix (acquired by Meta).
+  Martech stack from scratch; growth program through acquisition.
+- 2015–2016: Digital Marketing Engineer and Senior Web Developer,
+  Tradeshift. Technical lead for the marketing website and all
+  localized sites; "at the very heart of our website's continued
+  improvement" (CMO).
 - 2009–2012: Founder, Socient, digital agency for social good.
 
 ## Ventures
@@ -82,7 +87,7 @@ fully to one team.
 ## Tools & technologies
 
 AEO and GEO, schema (JSON-LD), llms.txt, Claude / Claude Code / OpenAI,
-HubSpot (workflows, custom objects, forms), WordPress, Contentful / Sanity, React / Next.js,
+HubSpot (workflows, custom objects, forms), Gradual, WordPress, Contentful / Sanity, React / Next.js,
 Segment CDP, GA4 / GTM, Vercel, Cloudflare, HubSpot / Salesforce,
 n8n / Zapier, Clay / Apollo, Gradual.
 
