@@ -80,6 +80,9 @@ digital assets shipped.
 - [MotherBotanist](https://motherbotanist.com): Office plant care for
   Bay Area companies, with a client portal for plant photos and care
   records.
+- [Redkix](https://dev-kix.pantheonsite.io/): Marketing website for
+  Redkix, a messaging startup that Meta acquired. Built on WordPress and
+  connected to Salesforce and Segment.
 
 His ventures run without his full-time attention, so he can commit
 fully to one team.
