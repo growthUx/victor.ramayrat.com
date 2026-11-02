@@ -358,6 +358,9 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
      "@id": "https://victor.ramayrat.com/#pegasus"
     },
     {
+     "@id": "https://victor.ramayrat.com/#ageo"
+    },
+    {
      "@id": "https://victor.ramayrat.com/#marketgrowth"
     }
    ],
@@ -368,7 +371,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
      "@type": "City",
      "name": "San Jose, California"
     },
-    "skills": "AI search (AEO and GEO), content engineering, schema and structured data, llms.txt, HubSpot administration, HubSpot custom objects and workflows, marketing automation, CRM data migration, GTM stack integrations, Google Tag Manager, GA4, Segment, AI agents and workflows, Claude Code, n8n, Zapier, WordPress, Next.js, community building on Gradual"
+    "skills": "AI search (AEO and GEO), content engineering, schema and structured data, llms.txt, HubSpot administration, HubSpot custom objects and workflows, marketing automation, CRM data migration, GTM stack integrations, Google Tag Manager, GA4, Segment, AI agents and workflows, Claude Code, n8n, Zapier, WordPress, Next.js, community building on Gradual, retrieval-augmented generation (RAG), LLM guardrails, model routing and fallback, Cloudflare Workers AI, AI Gateway, Turnstile"
    },
    "knowsAbout": [
     {
@@ -554,7 +557,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
    "@id": "https://victor.ramayrat.com/#ageo",
    "name": "A/GEO Agency",
    "url": "https://ageoagency.com",
-   "description": "An AI-native agency for answer engine optimization (AEO) and generative engine optimization (GEO) for small businesses and nonprofits.",
+   "description": "An AI-native agency for answer engine optimization (AEO) and generative engine optimization (GEO) for small businesses and nonprofits. Victor Ramayrat is its Principal Consultant for AI search visibility. Its site has Ask A/GEO, a RAG assistant built on Claude and Cloudflare with guardrails.",
    "founder": {
     "@id": "https://victor.ramayrat.com/#person"
    },
@@ -803,7 +806,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       <a href="#portfolio">Portfolio</a>
       <a href="#proof">Proof</a>
       <a href="#faq">FAQ</a>
-      <a href="/victor-ramayrat-cv.pdf?v=2026-10-26d" target="_blank" rel="noopener">CV ↗</a>
+      <a href="/victor-ramayrat-cv.pdf?v=2026-11-02" target="_blank" rel="noopener">CV ↗</a>
     </nav>
     <div class="nav-cta">
       <button class="theme-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">☾</button>
@@ -954,6 +957,25 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       <article class="era reveal">
         <div class="era-meta">
           <span class="tag">Role 02 · Current</span>
+          <div class="org">A/GEO Agency</div>
+          <div class="period">2026 - Present</div>
+        </div>
+        <div class="era-body">
+          <h3>Principal Consultant · AI Search Visibility</h3>
+          <p>I founded A/GEO Agency (ageoagency.com). It helps small businesses and nonprofits get found in AI search. A white label program lets partners offer the service to their own clients.</p>
+          <ul>
+            <li>Ask A/GEO: built the AI assistant on the agency website. It uses retrieval-augmented generation (RAG) and answers only from the public pages of the site, with links to its sources.</li>
+            <li>Retrieval: Cloudflare AI Search with embeddings and hybrid meaning and keyword search, page text in R2, and a BM25 keyword fallback. GitHub Actions sends new page text to R2 on each publish.</li>
+            <li>Model routing: Claude Haiku 5.5 is the main model, and Llama 3.3 70B on Cloudflare Workers AI is the fallback. A TypeSafe judgment model scores each message for topic, intent, and attempts to change the rules.</li>
+            <li>Guardrails: the assistant cannot invent prices, clients, or results. Cloudflare Turnstile, AI Gateway rate and spend limits, HMAC-signed session tokens, message limits, an origin check, and a kill switch control abuse and cost.</li>
+            <li>Delivery and quality: Cloudflare Pages and Pages Functions, answers streamed with server-sent events and the AG-UI protocol, and tests with Wrangler, mock model servers, and Playwright. The site has JSON-LD schema and llms.txt, and axe-core found zero WCAG 2.2 AA issues across 32 pages.</li>
+          </ul>
+          <div class="chips"><span class="chip">RAG assistant<small>Claude · Cloudflare AI Search</small></span><span class="chip">Guardrails<small>Turnstile · AI Gateway</small></span><span class="chip">WCAG 2.2 AA<small>0 axe-core issues</small></span></div>
+        </div>
+      </article>
+      <article class="era reveal">
+        <div class="era-meta">
+          <span class="tag">Role 03 · Current</span>
           <div class="org">MarketGrowth</div>
           <div class="period">2025 - Present</div>
         </div>
@@ -963,14 +985,14 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
           <ul>
             <li>Canine Companions (canine.org), a Socient.net client: delivered AEO and GEO for this national nonprofit. The work included an AI search visibility audit, schema (JSON-LD) on the WordPress site, answer-first pages and FAQs, llms.txt, and AI crawler rules.</li>
             <li>AgentLedGTM: built interactive tools with gated downloads, including a 40-check AI Search Visibility Audit.</li>
-            <li>A/GEO Agency: founded an AEO and GEO agency with a white label partner program. Orbytt: co-founder and CTO.</li>
+            <li>Orbytt: co-founder and CTO.</li>
           </ul>
           <div class="chips"><span class="chip">AEO / GEO<small>Canine Companions</small></span><span class="chip">Four ventures<small>founded and run</small></span></div>
         </div>
       </article>
       <article class="era reveal">
         <div class="era-meta">
-          <span class="tag">Role 03 · Enterprise</span>
+          <span class="tag">Role 04 · Enterprise</span>
           <div class="org">PwC, Products &amp; Technology</div>
           <div class="period">2019 - 2024</div>
         </div>
@@ -987,7 +1009,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       </article>
       <article class="era reveal">
         <div class="era-meta">
-          <span class="tag">Role 04 · Enterprise</span>
+          <span class="tag">Role 05 · Enterprise</span>
           <div class="org">Palo Alto Networks</div>
           <div class="period">2018 - 2019</div>
         </div>
@@ -1004,7 +1026,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       </article>
       <article class="era reveal">
         <div class="era-meta">
-          <span class="tag">Role 05 · Venture</span>
+          <span class="tag">Role 06 · Venture</span>
           <div class="org">Redkix <span style="color:var(--muted);font-weight:400">(acq. by Meta)</span></div>
           <div class="period">2016 - 2018</div>
         </div>
@@ -1021,7 +1043,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       </article>
       <article class="era reveal">
         <div class="era-meta">
-          <span class="tag">Role 06 · Scale-up</span>
+          <span class="tag">Role 07 · Scale-up</span>
           <div class="org">Tradeshift</div>
           <div class="period">2015 - 2016</div>
         </div>
@@ -1037,7 +1059,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       </article>
       <article class="era reveal">
         <div class="era-meta">
-          <span class="tag">Role 07 · Origin</span>
+          <span class="tag">Role 08 · Origin</span>
           <div class="org">Socient</div>
           <div class="period">2009 - 2012</div>
         </div>
@@ -1077,7 +1099,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
         <h3><a href="https://ageoagency.com" target="_blank" rel="nofollow noopener">A/GEO Agency ↗</a></h3>
         <div class="url">ageoagency.com · AI search agency</div>
         <p>An AI-native agency for AEO and GEO. It helps small businesses and nonprofits get found in AI search. Partners can resell the service under their own brand.</p>
-        <p class="proof"><b>What it proves:</b> AI search visibility work as a repeatable service, with structured data, content updates, and a partner program.</p>
+        <p class="proof"><b>What it proves:</b> AI search visibility work as a repeatable service, with structured data, content updates, and a partner program. The site also runs Ask A/GEO, a RAG assistant with guardrails that I built. The <a href="https://ageoagency.com/colophon" target="_blank" rel="nofollow noopener">colophon</a> lists each part.</p>
       </article>
       <article class="ven reveal">
         <div class="n">CASE /04</div>
@@ -1257,7 +1279,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       <div class="contact-actions">
         <a href="mailto:victor@ramayrat.com">Email me directly<span>victor@ramayrat.com</span></a>
         <a href="https://linkedin.com/in/victorramayrat" target="_blank" rel="noopener">Connect on LinkedIn ↗<span>linkedin.com/in/victorramayrat</span></a>
-        <a href="/victor-ramayrat-cv.pdf?v=2026-10-26d" target="_blank" rel="noopener" download>Download my CV ↗<span>PDF résumé</span></a>
+        <a href="/victor-ramayrat-cv.pdf?v=2026-11-02" target="_blank" rel="noopener" download>Download my CV ↗<span>PDF résumé</span></a>
       </div>
     </div>
   </div>

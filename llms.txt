@@ -42,6 +42,13 @@ digital assets shipped.
   Strategy Co. One Purse HubSpot build (custom objects, migrations,
   forms, workflows); ITIL.com community on Gradual; HubSpot
   administration and integrations for B2B SaaS clients.
+- 2026–Present: Principal Consultant, AI Search Visibility, A/GEO
+  Agency (ageoagency.com). AEO and GEO agency for small businesses and
+  nonprofits, with a white label partner program. Built Ask A/GEO, a
+  RAG assistant: Cloudflare AI Search with a BM25 fallback; Claude
+  Haiku 5.5 with a Llama 3.3 70B fallback on Workers AI; a TypeSafe
+  judgment model for routing; guardrails with Turnstile, AI Gateway
+  spend and rate limits, and HMAC-signed session tokens.
 - 2025–Present: Founder and Publisher, MarketGrowth. Consulting and
   publishing company; Socient.net is its studio brand. AEO and GEO for
   Canine Companions, a Socient.net client.
