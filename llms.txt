@@ -50,7 +50,8 @@ digital assets shipped.
   judgment model for routing and for personalization by industry and
   company (organization type, visitor goal, and pages viewed);
   guardrails with Turnstile, AI Gateway spend and rate limits, and
-  HMAC-signed session tokens.
+  HMAC-signed session tokens. The site scores 100 in all four Google
+  PageSpeed Insights categories on desktop.
 - 2025–Present: Founder and Publisher, MarketGrowth. Consulting and
   publishing company; Socient.net is its studio brand. AEO and GEO for
   Canine Companions, a Socient.net client. Orbytt (orbytt.ai): co-founder
