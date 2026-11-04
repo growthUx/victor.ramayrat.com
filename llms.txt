@@ -53,7 +53,11 @@ digital assets shipped.
   HMAC-signed session tokens.
 - 2025–Present: Founder and Publisher, MarketGrowth. Consulting and
   publishing company; Socient.net is its studio brand. AEO and GEO for
-  Canine Companions, a Socient.net client.
+  Canine Companions, a Socient.net client. Orbytt (orbytt.ai): co-founder
+  and CTO; built a professional social network on open source software
+  and custom plugins. MotherBotanist (motherbotanist.com): built a custom
+  website for an office plant care business and a client portal that
+  tracks the plants of each client and the care history of each plant.
 - 2019–2024: Senior Manager, Digital Performance, PwC Products &
   Technology. Web operations stack for PwC product brands; GTM and
   Eloqua integrations; lead capture for direct sales.
