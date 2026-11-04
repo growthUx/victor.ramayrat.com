@@ -557,7 +557,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
    "@id": "https://victor.ramayrat.com/#ageo",
    "name": "A/GEO Agency",
    "url": "https://ageoagency.com",
-   "description": "An AI-native agency for answer engine optimization (AEO) and generative engine optimization (GEO) for small businesses and nonprofits. Victor Ramayrat is its Principal Consultant for AI search visibility. Its site has Ask A/GEO, a RAG assistant built on Claude and Cloudflare with guardrails.",
+   "description": "An AI-native agency for answer engine optimization (AEO) and generative engine optimization (GEO) for small businesses and nonprofits. Victor Ramayrat is its Principal Consultant for AI search visibility. Its site has Ask A/GEO, a RAG assistant built on Claude and Cloudflare with guardrails and personalization by industry and company.",
    "founder": {
     "@id": "https://victor.ramayrat.com/#person"
    },
@@ -806,7 +806,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       <a href="#portfolio">Portfolio</a>
       <a href="#proof">Proof</a>
       <a href="#faq">FAQ</a>
-      <a href="/victor-ramayrat-cv.pdf?v=2026-11-02" target="_blank" rel="noopener">CV ↗</a>
+      <a href="/victor-ramayrat-cv.pdf?v=2026-11-03" target="_blank" rel="noopener">CV ↗</a>
     </nav>
     <div class="nav-cta">
       <button class="theme-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">☾</button>
@@ -967,6 +967,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
             <li>Ask A/GEO: built the AI assistant on the agency website. It uses retrieval-augmented generation (RAG) and answers only from the public pages of the site, with links to its sources.</li>
             <li>Retrieval: Cloudflare AI Search with embeddings and hybrid meaning and keyword search, page text in R2, and a BM25 keyword fallback. GitHub Actions sends new page text to R2 on each publish.</li>
             <li>Model routing: Claude Haiku 5.5 is the main model, and Llama 3.3 70B on Cloudflare Workers AI is the fallback. A TypeSafe judgment model scores each message for topic, intent, and attempts to change the rules.</li>
+            <li>Personalization by industry and company: the judgment model identifies the type of organization and the goal of each visitor. The chat also gets the current page and the pages that the visitor read during the visit. Code uses these signals to select the route, and each answer ends with a link to the next step that fits.</li>
             <li>Guardrails: the assistant cannot invent prices, clients, or results. Cloudflare Turnstile, AI Gateway rate and spend limits, HMAC-signed session tokens, message limits, an origin check, and a kill switch control abuse and cost.</li>
             <li>Delivery and quality: Cloudflare Pages and Pages Functions, answers streamed with server-sent events and the AG-UI protocol, and tests with Wrangler, mock model servers, and Playwright. The site has JSON-LD schema and llms.txt, and axe-core found zero WCAG 2.2 AA issues across 32 pages.</li>
           </ul>
@@ -1279,7 +1280,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       <div class="contact-actions">
         <a href="mailto:victor@ramayrat.com">Email me directly<span>victor@ramayrat.com</span></a>
         <a href="https://linkedin.com/in/victorramayrat" target="_blank" rel="noopener">Connect on LinkedIn ↗<span>linkedin.com/in/victorramayrat</span></a>
-        <a href="/victor-ramayrat-cv.pdf?v=2026-11-02" target="_blank" rel="noopener" download>Download my CV ↗<span>PDF résumé</span></a>
+        <a href="/victor-ramayrat-cv.pdf?v=2026-11-03" target="_blank" rel="noopener" download>Download my CV ↗<span>PDF résumé</span></a>
       </div>
     </div>
   </div>

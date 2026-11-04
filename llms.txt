@@ -47,8 +47,10 @@ digital assets shipped.
   nonprofits, with a white label partner program. Built Ask A/GEO, a
   RAG assistant: Cloudflare AI Search with a BM25 fallback; Claude
   Haiku 5.5 with a Llama 3.3 70B fallback on Workers AI; a TypeSafe
-  judgment model for routing; guardrails with Turnstile, AI Gateway
-  spend and rate limits, and HMAC-signed session tokens.
+  judgment model for routing and for personalization by industry and
+  company (organization type, visitor goal, and pages viewed);
+  guardrails with Turnstile, AI Gateway spend and rate limits, and
+  HMAC-signed session tokens.
 - 2025–Present: Founder and Publisher, MarketGrowth. Consulting and
   publishing company; Socient.net is its studio brand. AEO and GEO for
   Canine Companions, a Socient.net client.
