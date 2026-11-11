@@ -361,12 +361,6 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
    "worksFor": [
     {
      "@id": "https://victor.ramayrat.com/#pegasus"
-    },
-    {
-     "@id": "https://victor.ramayrat.com/#ageo"
-    },
-    {
-     "@id": "https://victor.ramayrat.com/#marketgrowth"
     }
    ],
    "hasOccupation": {
@@ -560,9 +554,9 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
   {
    "@type": "Organization",
    "@id": "https://victor.ramayrat.com/#ageo",
-   "name": "A/GEO Agency",
-   "url": "https://ageoagency.com",
-   "description": "An AI-native agency for answer engine optimization (AEO) and generative engine optimization (GEO) for small businesses and nonprofits. Victor Ramayrat is its Principal Consultant for AI search visibility. Its site has Ask A/GEO, a RAG assistant built on Claude and Cloudflare with guardrails and personalization by industry and company.",
+   "name": "A/GEO Research",
+   "url": "https://ageoresearch.com",
+   "description": "Research and news about AI search visibility (AEO and GEO). Victor Ramayrat founded it. The site has a free AI Visibility Score scanner and Ask A/GEO, a RAG chat assistant built on Claude and Cloudflare with guardrails.",
    "founder": {
     "@id": "https://victor.ramayrat.com/#person"
    },
@@ -571,6 +565,20 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
     "Generative engine optimization",
     "AI search visibility"
    ]
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "@id": "https://victor.ramayrat.com/#openact",
+   "name": "OpenAct",
+   "url": "https://docs.openact.app",
+   "codeRepository": "https://github.com/marketgrowth/openact",
+   "license": "https://www.apache.org/licenses/LICENSE-2.0",
+   "programmingLanguage": "TypeScript",
+   "runtimePlatform": "Cloudflare Workers",
+   "description": "An open source framework for agentic business apps on Cloudflare, with a Projects app and a Docs app. Its AI agent acts for a person and never has more power than that person's role.",
+   "author": {
+    "@id": "https://victor.ramayrat.com/#person"
+   }
   },
   {
    "@type": "Organization",
@@ -702,7 +710,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
      "name": "Who is Victor Ramayrat?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Victor Ramayrat is a marketing engineer in San Jose, California. He has 10+ years of marketing systems work at PwC, Tradeshift, Palo Alto Networks, and Redkix, which Meta acquired. He builds AI search programs, content systems, HubSpot workflows, and GTM stack integrations. He also founded Orbytt, Socient, A/GEO Agency, and AgentLedGTM."
+      "text": "Victor Ramayrat is a marketing engineer in San Jose, California. He has 10+ years of marketing systems work at PwC, Tradeshift, Palo Alto Networks, and Redkix, which Meta acquired. He builds AI search programs, content systems, HubSpot workflows, and GTM stack integrations. He also founded Orbytt, Socient, A/GEO Research, and AgentLedGTM."
      }
     },
     {
@@ -790,7 +798,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
      "name": "What about your own companies?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "I built and run Orbytt, Socient, A/GEO Agency, and AgentLedGTM end to end. That work made me a better engineer, because I own every system and every result. My ventures run without my full-time attention, so I can commit fully to one team."
+      "text": "I built and run Orbytt, Socient, A/GEO Research, and AgentLedGTM end to end. That work made me a better engineer, because I own every system and every result. My ventures run without my full-time attention, so I can commit fully to one team."
      }
     }
    ]
@@ -961,44 +969,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       </article>
       <article class="era reveal">
         <div class="era-meta">
-          <span class="tag">Role 02 · Current</span>
-          <div class="org">A/GEO Agency</div>
-          <div class="period">2026 - Present</div>
-        </div>
-        <div class="era-body">
-          <h3>Principal Consultant · AI Search Visibility</h3>
-          <p>I founded A/GEO Agency (ageoagency.com). It helps small businesses and nonprofits get found in AI search. A white label program lets partners offer the service to their own clients.</p>
-          <ul>
-            <li>Ask A/GEO: built the AI assistant on the agency website. It uses retrieval-augmented generation (RAG) and answers only from the public pages of the site, with links to its sources.</li>
-            <li>Retrieval: Cloudflare AI Search with embeddings and hybrid meaning and keyword search, page text in R2, and a BM25 keyword fallback. GitHub Actions sends new page text to R2 on each publish.</li>
-            <li>Model routing: Claude Haiku 5.5 is the main model, and Llama 3.3 70B on Cloudflare Workers AI is the fallback. A TypeSafe judgment model scores each message for topic, intent, and attempts to change the rules.</li>
-            <li>Personalization by industry and company: the judgment model identifies the type of organization and the goal of each visitor. The chat also gets the current page and the pages that the visitor read during the visit. Code uses these signals to select the route, and each answer ends with a link to the next step that fits.</li>
-            <li>Guardrails: the assistant cannot invent prices, clients, or results. Cloudflare Turnstile, AI Gateway rate and spend limits, HMAC-signed session tokens, message limits, an origin check, and a kill switch control abuse and cost.</li>
-            <li>Delivery and quality: Cloudflare Pages and Pages Functions, answers streamed with server-sent events and the AG-UI protocol, and tests with Wrangler, mock model servers, and Playwright. The site has JSON-LD schema and llms.txt, and axe-core found zero WCAG 2.2 AA issues across 32 pages.</li>
-          </ul>
-          <div class="chips"><span class="chip">RAG assistant<small>Claude · Cloudflare AI Search</small></span><span class="chip">Guardrails<small>Turnstile · AI Gateway</small></span><span class="chip">WCAG 2.2 AA<small>0 axe-core issues</small></span><a class="chip" href="https://pagespeed.web.dev/analysis/https-ageoagency-com/4ug9pojgjh?form_factor=desktop" target="_blank" rel="nofollow noopener">PageSpeed 100 ↗<small>Desktop · all four scores</small></a><a class="chip" href="https://ageoagency.com/colophon" target="_blank" rel="nofollow noopener">Colophon ↗<small>Full tech stack</small></a></div>
-        </div>
-      </article>
-      <article class="era reveal">
-        <div class="era-meta">
-          <span class="tag">Role 03 · Current</span>
-          <div class="org">MarketGrowth</div>
-          <div class="period">2025 - Present</div>
-        </div>
-        <div class="era-body">
-          <h3>Founder &amp; Publisher · Marketing Technology Consultant</h3>
-          <p>I run MarketGrowth, my consulting and publishing company. Socient.net is its studio brand for nonprofits and social enterprises.</p>
-          <ul>
-            <li>Canine Companions (canine.org), a Socient.net client: delivered AEO and GEO for this national nonprofit. The work included an AI search visibility audit, schema (JSON-LD) on the WordPress site, answer-first pages and FAQs, llms.txt, and AI crawler rules.</li>
-            <li>AgentLedGTM: built interactive tools with gated downloads, including a 40-check AI Search Visibility Audit.</li>
-            <li>Orbytt: co-founder and CTO. Built a professional social network on open source software and custom plugins. Learn more: <a href="https://orbytt.ai" target="_blank" rel="nofollow noopener">orbytt.ai</a></li>
-            <li>MotherBotanist: built a custom website for an office plant care business. Built a client portal that tracks the plants of each client and the care history of each plant. Learn more: <a href="https://motherbotanist.com" target="_blank" rel="nofollow noopener">motherbotanist.com</a></li>
-          </ul>
-        </div>
-      </article>
-      <article class="era reveal">
-        <div class="era-meta">
-          <span class="tag">Role 04 · Enterprise</span>
+          <span class="tag">Role 02 · Enterprise</span>
           <div class="org">PwC, Products &amp; Technology</div>
           <div class="period">2019 - 2024</div>
         </div>
@@ -1015,7 +986,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       </article>
       <article class="era reveal">
         <div class="era-meta">
-          <span class="tag">Role 05 · Enterprise</span>
+          <span class="tag">Role 03 · Enterprise</span>
           <div class="org">Palo Alto Networks</div>
           <div class="period">2018 - 2019</div>
         </div>
@@ -1032,7 +1003,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       </article>
       <article class="era reveal">
         <div class="era-meta">
-          <span class="tag">Role 06 · Venture</span>
+          <span class="tag">Role 04 · Venture</span>
           <div class="org">Redkix <span style="color:var(--muted);font-weight:400">(acq. by Meta)</span></div>
           <div class="period">2016 - 2018</div>
         </div>
@@ -1049,7 +1020,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       </article>
       <article class="era reveal">
         <div class="era-meta">
-          <span class="tag">Role 07 · Scale-up</span>
+          <span class="tag">Role 05 · Scale-up</span>
           <div class="org">Tradeshift</div>
           <div class="period">2015 - 2016</div>
         </div>
@@ -1061,6 +1032,48 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
             <li>Ran release operations between brand, demand generation, and engineering teams.</li>
           </ul>
           <div class="chips"><span class="chip">"At the very heart"<small>of the website's improvement, per CMO</small></span><span class="chip">Global sites<small>all localized properties</small></span></div>
+        </div>
+      </article>
+    </div>
+
+    <p class="eyebrow reveal" style="margin-top:64px;margin-bottom:0">Research and projects</p>
+    <div class="exp-list" style="margin-top:22px">
+      <article class="era reveal">
+        <div class="era-meta">
+          <span class="tag">Project 01 · Research</span>
+          <div class="org">A/GEO Research</div>
+          <div class="period">2026 - Present</div>
+        </div>
+        <div class="era-body">
+          <h3>AI Search Research and Answer Engine</h3>
+          <p>I publish research and news about AI search visibility (AEO and GEO) at <a href="https://ageoresearch.com" target="_blank" rel="nofollow noopener">ageoresearch.com</a>. The site has a free AI Visibility Score scanner and Ask A/GEO, a chat assistant.</p>
+          <ul>
+            <li>Ask A/GEO: built the chat assistant on A/GEO Answers, a retrieval-augmented generation (RAG) answer engine. It answers only from the public pages of the site, with links to its sources.</li>
+            <li>Models: Claude Haiku 5.5 writes the answers. Llama 3.3 70B on Cloudflare Workers AI is the backup. Jev, a TypeSafe judgment model, sorts each message, and code selects the route.</li>
+            <li>Retrieval: Cloudflare AI Search with embeddings and hybrid search, page text in R2, and a BM25 keyword backup. GitHub Actions sends new page text to R2 on each publish.</li>
+            <li>Safety and cost: Cloudflare Turnstile, AI Gateway rate and spend limits, HMAC-signed session tokens, message limits, an origin check, and an on/off switch.</li>
+            <li>Stack: static HTML from a build script with no outside packages. Cloudflare Pages, Pages Functions, Cache API, server-sent events, and AG-UI. Resend, Stripe Payment Links, JSON-LD schema, and llms.txt.</li>
+            <li>Quality: tested with Wrangler, mock model servers, and Playwright. axe-core found zero WCAG 2.2 AA issues on all 32 pages.</li>
+          </ul>
+          <div class="chips"><span class="chip">RAG assistant<small>Claude · Cloudflare AI Search</small></span><span class="chip">Guardrails<small>Turnstile · AI Gateway</small></span><span class="chip">WCAG 2.2 AA<small>0 axe-core issues</small></span><a class="chip" href="https://ageoresearch.com/colophon/" target="_blank" rel="nofollow noopener">Colophon ↗<small>Full tech stack</small></a></div>
+        </div>
+      </article>
+      <article class="era reveal">
+        <div class="era-meta">
+          <span class="tag">Project 02 · Open source</span>
+          <div class="org">OpenAct</div>
+          <div class="period">2026 - Present</div>
+        </div>
+        <div class="era-body">
+          <h3>Open Source Framework for Agentic Business Apps</h3>
+          <p>OpenAct is an open source framework for agentic business apps on Cloudflare. It uses the Apache License 2.0.</p>
+          <ul>
+            <li>Apps: a Projects app with Kanban, Gantt, and calendar views, an AI agent, and search. A Docs app with live editing, comments, and AI writing help. More apps install from GitHub with one command.</li>
+            <li>Framework: passwordless sign-in, multi-tenant companies, roles and permissions for each app, live updates, email, and files. Each app adds only its own features.</li>
+            <li>AI agent: acts for a person and never has more power than that person's role. Deletes and large changes wait for approval through AG-UI interrupts. The system logs each agent action.</li>
+            <li>Stack: Cloudflare Workers, D1, R2, Durable Objects, Vectorize, Workers AI, and AI Gateway. Hono API. React, Vite, shadcn/ui, and Tailwind CSS. Resend for email. Jev by TypeSafe for topic checks.</li>
+          </ul>
+          <div class="chips"><span class="chip">Open source<small>Apache 2.0</small></span><span class="chip">Cloudflare end to end<small>Workers · D1 · R2 · Durable Objects</small></span><a class="chip" href="https://github.com/marketgrowth/openact" target="_blank" rel="nofollow noopener">GitHub ↗<small>marketgrowth/openact</small></a><a class="chip" href="https://docs.openact.app" target="_blank" rel="nofollow noopener">Docs ↗<small>docs.openact.app</small></a></div>
         </div>
       </article>
     </div>
@@ -1090,10 +1103,10 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       </article>
       <article class="ven reveal">
         <div class="n">CASE /03</div>
-        <h3><a href="https://ageoagency.com" target="_blank" rel="nofollow noopener">A/GEO Agency ↗</a></h3>
-        <div class="url">ageoagency.com · AI search agency</div>
-        <p>An AI-native agency for AEO and GEO. It helps small businesses and nonprofits get found in AI search. Partners can resell the service under their own brand.</p>
-        <p class="proof"><b>What it proves:</b> AI search visibility work as a repeatable service, with structured data, content updates, and a partner program. The site also runs Ask A/GEO, a RAG assistant with guardrails that I built. The <a href="https://ageoagency.com/colophon" target="_blank" rel="nofollow noopener">colophon</a> lists each part.</p>
+        <h3><a href="https://ageoresearch.com" target="_blank" rel="nofollow noopener">A/GEO Research ↗</a></h3>
+        <div class="url">ageoresearch.com · AI search research</div>
+        <p>Research and news about AI search visibility (AEO and GEO). It has a free AI Visibility Score scanner and Ask A/GEO, a chat assistant that answers from the site.</p>
+        <p class="proof"><b>What it proves:</b> AI search knowledge that I publish and test in public. Ask A/GEO is a RAG assistant with guardrails that I built. The <a href="https://ageoresearch.com/colophon/" target="_blank" rel="nofollow noopener">colophon</a> lists each part.</p>
       </article>
       <article class="ven reveal">
         <div class="n">CASE /04</div>
@@ -1210,7 +1223,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
     <div class="faq-list">
       <details class="faq-item reveal" open>
         <summary>Who is Victor Ramayrat?</summary>
-        <div class="a">Victor Ramayrat is a marketing engineer in San Jose, California. He has 10+ years of marketing systems work at PwC, Tradeshift, Palo Alto Networks, and Redkix, which Meta acquired. He builds AI search programs, content systems, HubSpot workflows, and GTM stack integrations. He also founded Orbytt, Socient, A/GEO Agency, and AgentLedGTM.</div>
+        <div class="a">Victor Ramayrat is a marketing engineer in San Jose, California. He has 10+ years of marketing systems work at PwC, Tradeshift, Palo Alto Networks, and Redkix, which Meta acquired. He builds AI search programs, content systems, HubSpot workflows, and GTM stack integrations. He also founded Orbytt, Socient, A/GEO Research, and AgentLedGTM.</div>
       </details>
       <details class="faq-item reveal">
         <summary>What is a marketing engineer?</summary>
@@ -1254,7 +1267,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
       </details>
       <details class="faq-item reveal">
         <summary>What about your own companies?</summary>
-        <div class="a">I built and run Orbytt, Socient, A/GEO Agency, and AgentLedGTM end to end. That work made me a better engineer, because I own every system and every result. My ventures run without my full-time attention, so I can commit fully to one team.</div>
+        <div class="a">I built and run Orbytt, Socient, A/GEO Research, and AgentLedGTM end to end. That work made me a better engineer, because I own every system and every result. My ventures run without my full-time attention, so I can commit fully to one team.</div>
       </details>
     </div>
   </div>

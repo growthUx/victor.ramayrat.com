@@ -42,23 +42,6 @@ digital assets shipped.
   Strategy Co. One Purse HubSpot build (custom objects, migrations,
   forms, workflows); ITIL.com community on Gradual; HubSpot
   administration and integrations for B2B SaaS clients.
-- 2026–Present: Principal Consultant, AI Search Visibility, A/GEO
-  Agency (ageoagency.com). AEO and GEO agency for small businesses and
-  nonprofits, with a white label partner program. Built Ask A/GEO, a
-  RAG assistant: Cloudflare AI Search with a BM25 fallback; Claude
-  Haiku 5.5 with a Llama 3.3 70B fallback on Workers AI; a TypeSafe
-  judgment model for routing and for personalization by industry and
-  company (organization type, visitor goal, and pages viewed);
-  guardrails with Turnstile, AI Gateway spend and rate limits, and
-  HMAC-signed session tokens. The site scores 100 in all four Google
-  PageSpeed Insights categories on desktop.
-- 2025–Present: Founder and Publisher, MarketGrowth. Consulting and
-  publishing company; Socient.net is its studio brand. AEO and GEO for
-  Canine Companions, a Socient.net client. Orbytt (orbytt.ai): co-founder
-  and CTO; built a professional social network on open source software
-  and custom plugins. MotherBotanist (motherbotanist.com): built a custom
-  website for an office plant care business and a client portal that
-  tracks the plants of each client and the care history of each plant.
 - 2019–2024: Senior Manager, Digital Performance, PwC Products &
   Technology. Web operations stack for PwC product brands; GTM and
   Eloqua integrations; lead capture for direct sales.
@@ -71,15 +54,34 @@ digital assets shipped.
   localized sites; "at the very heart of our website's continued
   improvement" (CMO).
 
+## Research and projects
+
+- 2026–Present: A/GEO Research (ageoresearch.com). Research and news
+  about AI search visibility (AEO and GEO), with a free AI Visibility
+  Score scanner. Built Ask A/GEO, a RAG chat assistant: Cloudflare AI
+  Search with a BM25 backup; Claude Haiku 5.5 with a Llama 3.3 70B
+  backup on Workers AI; Jev, a TypeSafe judgment model, for routing;
+  guardrails with Turnstile, AI Gateway spend and rate limits, and
+  HMAC-signed session tokens. Static HTML on Cloudflare Pages and Pages
+  Functions, server-sent events, AG-UI, JSON-LD, and llms.txt. Zero
+  WCAG 2.2 AA issues in axe-core on all 32 pages.
+- 2026–Present: OpenAct (github.com/marketgrowth/openact). Open source
+  framework (Apache 2.0) for agentic business apps on Cloudflare, with a
+  Projects app (Kanban, Gantt, calendar, AI agent, search) and a Docs
+  app (live editing, comments, AI writing help). The AI agent acts for a
+  person within that person's role; risky changes wait for approval.
+  Stack: Cloudflare Workers, D1, R2, Durable Objects, Vectorize, Workers
+  AI, AI Gateway, Hono, React, Vite, shadcn/ui, Tailwind CSS, Resend.
+
 ## Ventures
 
 - [Orbytt](https://orbytt.ai): Community platform that connects Filipino
   virtual talent with businesses worldwide.
 - [Socient](https://socient.net): AI-native studio for social
   enterprises and nonprofits.
-- [A/GEO Agency](https://ageoagency.com): AI-native AEO and GEO agency
-  for small businesses and nonprofits, with a white label partner
-  program.
+- [A/GEO Research](https://ageoresearch.com): Research and news about
+  AI search visibility (AEO and GEO), with a free site scanner and a RAG
+  chat assistant.
 - [AgentLedGTM](https://agentledgtm.com): Publication for agent-led
   growth teams, with playbooks, interactive tools, and industry news.
 
@@ -139,7 +141,7 @@ building: AI search programs, content workflows, HubSpot automation, and
 AI agents. Evidence: enterprise work (PwC), scale-up web operations
 (Tradeshift), sales adoption of Drift from 50% to 80% (Palo Alto
 Networks), growth through exit (Redkix to Meta), and four ventures he
-founded and runs (Orbytt, Socient, A/GEO Agency, AgentLedGTM).
+founded and runs (Orbytt, Socient, A/GEO Research, AgentLedGTM).
 
 ## Contact
 
