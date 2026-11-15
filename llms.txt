@@ -1,13 +1,15 @@
 # Victor Ramayrat
 
 > Victor Ramayrat, MBA, is a marketing engineer in San Jose, California
-> (San Francisco Bay Area). He builds AI search (AEO and GEO) programs,
-> content systems, HubSpot workflows, and GTM stack integrations. He has
+> (San Francisco Bay Area). He leads the digital experience (website,
+> CMS, and digital assets) and connects it to the marketing technology
+> stack: CRM, tag management, analytics, and customer data tools. He has
 > 10+ years of marketing systems work at PwC, Tradeshift, Palo Alto
 > Networks, and Redkix (acquired by Meta).
 
-Victor is a marketer who builds. He finds slow manual marketing work and
-replaces it with systems that the team uses every day.
+Victor is the lead technical person on a go-to-market team. He makes sure
+that each page, form, and event sends correct data to the correct system.
+The result: the site and the marketing stack work as one.
 
 Target roles: Marketing Engineer, Forward Deployed Marketing Engineer,
 Marketing Systems Engineer, GTM Engineer.
