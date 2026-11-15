@@ -122,8 +122,9 @@ header{position:fixed;inset:0 0 auto;z-index:50;background:var(--nav-bg);backdro
   radial-gradient(900px 480px at 85% -10%,var(--accent-soft) 0%,transparent 60%),
   radial-gradient(700px 420px at -10% 25%,var(--orange-soft) 0%,transparent 55%)}
 .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
-.hero h1{font-size:clamp(30px,4.5vw,44px);margin:0 0 22px}
+.hero h1{font-size:clamp(36px,5.4vw,58px);line-height:1.06;margin:0 0 24px}
 .hero h1 em{font-style:normal;color:var(--accent)}
+@media(max-width:600px){.hero-br{display:none}}
 .hero .lead{margin-bottom:32px}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
 .hero-roles{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
@@ -842,9 +843,8 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:13.5px;color:va
         <span class="role-chip">MarTech Stack Integration</span>
         <span class="role-chip">Data and Analytics</span>
       </div>
-      <h1 class="reveal">I lead the <em>digital experience</em> and the <em>marketing systems</em> that connect to it.</h1>
-      <p class="lead reveal">Your website, landing pages, and content are your digital experience. Your CRM, marketing platform, and analytics are your marketing systems. Often, no one person owns how these two parts connect.<br /><br />
-        I am the lead technical person on a go-to-market team. I manage the website, the CMS, and the digital assets. I connect them to the marketing technology stack: CRM, tag management, analytics, and customer data tools. I make sure that each page, form, and event sends correct data to the correct system.<br /><br />The result: your site and your stack work as one. Your team can launch pages fast, see each step of the buyer journey, and trust the data in the CRM. Let's build something together.</p>
+      <h1 class="reveal">Building the <em>B2B digital experiences</em> for<br class="hero-br" /> the next decade</h1>
+      <p class="lead reveal">I'm Victor, web publisher slash Marketing Systems Engineer by trade. As an AI-forward full-stack marketer, I help businesses deploy their online process and web operations to grow their pipeline and scale marketing motions.</p>
       <div class="hero-ctas reveal">
         <button class="btn btn-orange open-modal" type="button">Start a conversation</button>
         <a class="btn btn-ghost" href="#capabilities">See the impact ↓</a>
