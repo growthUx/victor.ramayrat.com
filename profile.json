@@ -106,7 +106,8 @@
   "tools": [
     "Claude / OpenAI", "WordPress", "Contentful / Sanity", "React / Next.js",
     "Segment CDP", "GA4 / GTM", "Vercel", "Cloudflare",
-    "HubSpot / Salesforce", "n8n / Zapier", "Clay / Apollo", "Gradual"
+    "HubSpot / Salesforce", "n8n / Zapier", "Clay / Apollo", "Gradual",
+    "Webflow", "BigQuery", "Resend", "Ahrefs", "Profound"
   ],
   "endorsements": [
     {

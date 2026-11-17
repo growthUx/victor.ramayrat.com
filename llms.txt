@@ -41,7 +41,9 @@ digital assets shipped.
 ## Experience
 
 - 2025–Present: Marketing Engineer Consultant (Fractional), Pegasus
-  Strategy Co. One Purse HubSpot build (custom objects, migrations,
+  Strategy Co. Founding editorial team for GTMMatters.com (publishing and
+  content infrastructure for the media publication and the members app);
+  One Purse HubSpot build (custom objects, migrations,
   forms, workflows); ITIL.com community on Gradual; HubSpot
   administration and integrations for B2B SaaS clients.
 - 2019–2024: Senior Manager, Digital Performance, PwC Products &
@@ -67,7 +69,7 @@ digital assets shipped.
   HMAC-signed session tokens. Static HTML on Cloudflare Pages and Pages
   Functions, server-sent events, AG-UI, JSON-LD, and llms.txt. Zero
   WCAG 2.2 AA issues in axe-core on all 32 pages.
-- 2026–Present: OpenAct (github.com/marketgrowth/openact). Open source
+- 2026–Present: OpenAct (openact.ing). Open source
   framework (Apache 2.0) for agentic business apps on Cloudflare, with a
   Projects app (Kanban, Gantt, calendar, AI agent, search) and a Docs
   app (live editing, comments, AI writing help). The AI agent acts for a
@@ -117,7 +119,8 @@ where his impact and the value he brings make a clear difference.
 AEO and GEO, schema (JSON-LD), llms.txt, Claude / Claude Code / OpenAI,
 HubSpot (workflows, custom objects, forms), Gradual, WordPress, Contentful / Sanity, React / Next.js,
 Segment CDP, GA4 / GTM, Vercel, Cloudflare, HubSpot / Salesforce,
-n8n / Zapier, Clay / Apollo, Gradual.
+n8n / Zapier, Clay / Apollo, Gradual, Webflow, BigQuery, Resend, Ahrefs,
+Profound.
 
 ## Endorsements (excerpts)
 
